@@ -8,13 +8,14 @@
 
 .background {
     background: #286d8d;
-    position: absolute;
-    top: 0;
+    /* position: absolute; 
+     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    width: 100vw;
+    left: 0; */
+    width: 100%;
     height: 100vh;
+
   }
 
   .curve{
@@ -28,7 +29,7 @@
     position: relative;     
     z-index: 1;
     left: 8%;
-    height: 500px;
+    height: 85%;
     }
   
   /* .scrollText {
@@ -123,7 +124,14 @@
     animation: fadeInAnimation 1s ease-in forwards;
     animation-delay: 1s; 
 }
+.feature{
 
+
+ padding-left: 10%;
+ padding-right: 10%;
+ text-align: center;
+ font-size: 40px;
+}
 @keyframes fadeInAnimation {
     from {
         opacity: 0;
