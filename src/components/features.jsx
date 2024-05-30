@@ -11,22 +11,26 @@ import f6 from '../resources/feature6.png';
 import f7 from '../resources/feature7.png';
 import f8 from '../resources/feature8.png';
 
-function Feature() {
+function Feature({onScrollLock}) {
     const alignCenter = { display: 'flex', alignItems: 'center' }
 
  const parallaxRef = useRef();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const caroData=[f1,f2,f3,f4,f5,f6,f7,f8];
-
+  const [isScrollComplete, setIsScrollComplete] = useState(false);
   useEffect(() => {
     const parallax = parallaxRef.current.container.current;
     const handleScroll = () => {
       const scrollPosition = parallax.scrollTop;
       const totalScrollHeight = parallax.scrollHeight - parallax.clientHeight;
-      console.log(totalScrollHeight);
       const scrollFraction = scrollPosition / totalScrollHeight;
       const newIndex = Math.floor(scrollFraction * caroData.length);
       setCurrentImageIndex(Math.min(newIndex, caroData.length - 1));
+      const isFullyScrolled=scrollPosition>=totalScrollHeight;
+      console.log(scrollPosition);
+      console.log(totalScrollHeight);
+     
+      onScrollLock(!isFullyScrolled);
     };
 
     parallax.addEventListener('scroll', handleScroll);
@@ -34,12 +38,20 @@ function Feature() {
     return () => {
       parallax.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [onScrollLock]);
   
 
     return <div  className={styles.featuresection}>
         
-       <Parallax ref={parallaxRef}  pages={8} style={{overflowY:"scroll",scrollbarWidth:"none"}}>
+    
+        <ParallaxLayer sticky={{start:0,end:7}}>
+          <div className={styles.featureimage} >
+   {caroData.map((item,idx)=>(
+     <img className={idx==currentImageIndex?`${styles.imgactive}`:`${styles.imginactive}`} src={item}></img>
+   )) }
+  
+     </div>
+        </ParallaxLayer>
         <ParallaxLayer offset={0} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
@@ -120,13 +132,8 @@ function Feature() {
 
 </div> 
         </ParallaxLayer>
-       </Parallax>
-       <div className={styles.featureimage} >
-   {caroData.map((item,idx)=>(
-     <img className={idx==currentImageIndex?`${styles.imgactive}`:`${styles.imginactive}`} src={item}></img>
-   )) }
-   {console.log(currentImageIndex)}
-     </div>
+     
+       
     </div>
 }
 export default Feature;
