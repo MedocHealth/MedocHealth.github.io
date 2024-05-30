@@ -5,9 +5,6 @@ import { Parallax,ParallaxLayer } from "@react-spring/parallax";
 import img1 from '../resources//phone medoc.png';
 import logo from '../resources/logo-medoc.png';
 
-import HeroSection from "../components/herosection.jsx";
-import Feature from "../components/features.jsx";
-import UserApp from "../components/userapp.jsx";
 import ua1 from '../resources/userapp1.png';
 import f1 from '../resources/feature1.png';
 import f2 from '../resources/feature2.png';
@@ -24,7 +21,7 @@ function HomePage() {
     const caroData=[f1,f2,f3,f4,f5,f6,f7,f8];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const alignCenter = { display: 'flex', alignItems: 'center' , justifyContent: 'flex-end'}
-        const [scrollLocked, setScrollLocked] = useState(true);
+      
         const pLayer={width:"auto",marginLeft:"5%",marginRight:"5%",marginTop:"2%"}
         const parallaxRef = useRef();
 
@@ -36,7 +33,7 @@ function HomePage() {
 
                 const scrollPosition = parallax.scrollTop-4*parallax.clientHeight;
                 const totalScrollHeight = parallax.clientHeight*8 - parallax.clientHeight;
-                console.log(parallax.clientHeight*8);
+             
                 const scrollFraction = scrollPosition / totalScrollHeight;
               
                 const newIndex = Math.floor(scrollFraction * caroData.length);
@@ -51,26 +48,29 @@ function HomePage() {
             return () => {
               parallax.removeEventListener('scroll', handleScroll);
             };
-          }, []);
+          }, [caroData.length]);
           
      return <div className={styles.herobackground} >
  
     
      <Parallax ref={parallaxRef} pages={18} >  
- 
-         <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center',backgroundColor:"#286d8d" }}>
+ {/* <ParallaxLayer offset={0} sticky={{start:0,end:3}} style={{zIndex:"1"}}>
+ <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+     
+ </ParallaxLayer> */}
+         <ParallaxLayer offset={0}  style={{ ...alignCenter, justifyContent: 'center',backgroundColor:"#286d8d" }}>
                  <img src={logo} alt="logo" className={styles.logo}/>
-                 <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                 {/* <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
      
          </ParallaxLayer>
  
-         <ParallaxLayer sticky={{start:1, end:3}} speed={0}>
-             <img src={img1} className={styles.img1}></img>
-             <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+         <ParallaxLayer sticky={{start:1, end:3}} style={{zIndex:"2"}} >
+             <img src={img1} className={styles.img1} alt="#"></img>
+             {/* <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
      
          </ParallaxLayer>                              
  
-         <ParallaxLayer sticky={{ start: 1, end: 2 }} speed={1.5} style={{ ...alignCenter}}>
+         <ParallaxLayer sticky={{ start: 1, end: 2 }} speed={1} style={{ ...alignCenter,backgroundColor:"#286d8d" }}>
            
                  <div className={`${styles.card}`}>                            
                      <h1>#betterthanpaper</h1>         
@@ -81,7 +81,7 @@ function HomePage() {
                                 
          </ParallaxLayer>
  
-         <ParallaxLayer sticky={{ start: 3, end: 3 }} speed={1.5} style={{ ...alignCenter}}>
+         <ParallaxLayer sticky={{ start: 3, end: 3 }} speed={1} style={{ ...alignCenter,backgroundColor:"#286d8d" }}>
              
          <div className={`${styles.card}`}>                            
                      <h1>#cheaperthanpaper</h1>         
@@ -93,7 +93,7 @@ function HomePage() {
          <ParallaxLayer offset={4} sticky={{start:4,end:11}}>
           <div className={styles.featureimage} >
    {caroData.map((item,idx)=>(
-     <img className={idx==currentImageIndex?`${styles.imgactive}`:`${styles.imginactive}`} src={item}></img>
+     <img className={idx===currentImageIndex?`${styles.imgactive}`:`${styles.imginactive}`} src={item} alt="#"></img>
    )) }
   
      </div>
@@ -186,7 +186,7 @@ function HomePage() {
 </div>
 
 <div>
-<img src={ua1}></img>
+<img src={ua1} alt="#"></img>
 </div>
 </div>
             </ParallaxLayer>
@@ -198,7 +198,7 @@ function HomePage() {
 </div>
 
 <div>
-<img src={ua1}></img>
+<img src={ua1} alt="#"></img>
 </div>
 </div>
             </ParallaxLayer>
@@ -210,7 +210,7 @@ function HomePage() {
 </div>
 
 <div>
-<img src={ua1}></img>
+<img src={ua1} alt="#"></img>
 </div>
 </div>
                 </ParallaxLayer>
@@ -222,7 +222,7 @@ function HomePage() {
 </div>
 
 <div>
-<img src={ua1}></img>
+<img src={ua1} alt="#"></img>
 </div>
 </div>
                 </ParallaxLayer>
@@ -234,7 +234,7 @@ function HomePage() {
 </div>
 
 <div>
-<img src={ua1}></img>
+<img src={ua1} alt="#"></img>
 </div>
 </div>
             </ParallaxLayer>
@@ -246,7 +246,7 @@ function HomePage() {
 </div>
 
 <div>
-<img src={ua1}></img>
+<img src={ua1} alt="asd"></img>
 </div>
 </div>
             </ParallaxLayer>
