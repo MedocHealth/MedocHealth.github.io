@@ -6,6 +6,118 @@
     margin: 0;
 }
 
+
+.navbarBlue {
+  background-color: #286d8d;
+  padding: 16px 0;
+  transition: .25s ease-in;
+} 
+.navbarWhite {
+  background-color: white;
+  padding: 16px 0;
+  transition: .25s ease-in;
+}
+
+.container {
+  max-width: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navright {
+  display: flex;
+  align-items: center;
+  padding-left: 50%;
+  font-family: 'Poppins';
+}
+.navrighthidden{
+  display: flex;
+  align-items: center;
+  padding-left: 50%;
+  font-family: 'Poppins';
+  display: none;
+}
+
+.navbuttonBlue {
+  background-color: #286d8d;
+  color: white;
+  font-size: 0.875rem; 
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: .25s ease-in;
+}
+.navbuttonWhite{
+  background-color:white;
+  /* color: white; */
+  font-size: 0.875rem; 
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+    transition: .25s ease-in;
+}
+.navbutton:hover {
+  background-color: #2d3748;
+}
+
+.distbutton {
+  margin-left: 20px;
+}
+.newbuttonBlue{
+  background-color: #286d8d;
+  color: white;
+  font-size: 0.875rem; 
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: .25s ease-in;
+}
+.newbuttonWhite{
+  background-color: white;
+  /* color: white; */
+  font-size: 0.875rem; 
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: .25s ease-in;
+}
+
+
+.menuicon {
+  margin-left: 120px;
+  color: white;
+  font-size: 1.875rem; 
+  opacity: 0;
+}
+
+.menuiconappear{
+  margin-left: 120px;
+  color: black;
+  font-size: 1.875rem; 
+  
+  opacity: 100;
+}
+
+
+
+
+
+
 .homepage{
   overflow:hidden;
 }
