@@ -57,11 +57,13 @@
     font-weight: bold;
     margin-bottom: 10%;
     text-align: center;
+    font-family: 'Poppins';
   }
 
   .card p{    
     font-size: 15px;
     font-weight: 700;
+    font-family: 'Poppins';
   }
 
   
@@ -101,7 +103,7 @@
 .features{
   padding-left: 10%;
   padding-right: 10%;
-
+  
   display: flex;
   justify-content: space-between;
   
@@ -110,12 +112,15 @@
 width: 50%;
 padding-top: 30%;
 padding-bottom: 30%;
+font-family: 'Poppins';
 }
 .featuretext h1{
   font-size: 50px;
+  
 }
 .featuretext p{
-  font-size: 30px;
+  font-size: 20px;
+
   color: gray;
 }
 .featureimage{
@@ -169,12 +174,70 @@ right: 10%;
 .userdes h1{
   font-size: 60px;
   padding-bottom: 5%;
+  font-family: 'Poppins';
 }
 .userdes p{
   font-size: 20px;
+  font-family: 'Poppins';
 }
 .userappdescription img{
   /* width: 0vh; */
   
   height: 80vh;
 }
+
+.highlightContainer
+{
+  margin-top: 5%;
+}
+
+.highlightHeading
+{
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.highlightBox {
+  margin-top: 10%;
+  display: flex;  
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 3%;
+  /* margin-right: 5%; */
+}
+
+.highlightElement{
+  height:50vh;
+  width:45%;  
+  border-radius:10px;
+  /* background-color: #F2F0EF; */
+  margin-left: 1%;
+  margin-right:1%;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 3%;
+  font-family: 'Poppins';
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+.highlightImage{
+  width: 30%;  
+  margin:10px;
+}
+/* .highlightImage{
+  position: absolute;
+  top: 38%;
+  left: 320px;  
+} */
+
+.pill {
+  background-color: #41c1ba;
+  border-style: none;
+  padding: 5px;
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+
+

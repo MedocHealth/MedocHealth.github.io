@@ -1,0 +1,9 @@
+<svg width="150" height="20" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define the highlighter stroke using a path element -->
+  <path d="M10 10 Q 40 0, 140 10" 
+        stroke="#41c1ba" 
+        stroke-width="15" 
+        stroke-linecap="round" 
+        fill="none" 
+        opacity="0.5"/>
+</svg>

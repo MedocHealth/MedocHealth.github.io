@@ -14,6 +14,11 @@ import f5 from '../resources/feature5.png';
 import f6 from '../resources/feature6.png';
 import f7 from '../resources/feature7.png';
 import f8 from '../resources/feature8.png';
+import hi1 from '../resources/Available on all devices.png'
+import hi2 from '../resources/A Complete Solution.png'
+import hi3 from '../resources/Healthcare at your fingertips.png'
+import hi4 from '../resources/Modern meets conventional.png'
+// import highlight from '../resources/highlighter.svg'
 
 
 
@@ -22,7 +27,7 @@ function HomePage() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const alignCenter = { display: 'flex', alignItems: 'center' , justifyContent: 'flex-end'}
       
-        const pLayer={width:"auto",marginLeft:"5%",marginRight:"5%",marginTop:"2%"}
+        const pLayer={width:"auto",marginLeft:"5%",marginRight:"5%"}
         const parallaxRef = useRef();
 
         useEffect(() => {
@@ -53,7 +58,7 @@ function HomePage() {
      return <div className={styles.herobackground} >
  
     
-     <Parallax ref={parallaxRef} pages={18} >  
+     <Parallax ref={parallaxRef} pages={20} >  
  {/* <ParallaxLayer offset={0} sticky={{start:0,end:3}} style={{zIndex:"1"}}>
  <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
      
@@ -178,7 +183,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer style={{...pLayer}} offset={12} sticky={{start:12, end:13}} >
+        <ParallaxLayer style={{...pLayer}} offset={12} sticky={{start:12, end:17}} >
 <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc+ Nursing</h1>
@@ -190,7 +195,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={13} sticky={{start:13, end:14}}>
+            <ParallaxLayer style={{...pLayer}} offset={13} sticky={{start:13, end:17}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>DocAssist</h1>
@@ -202,7 +207,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={14} sticky={{start:14, end:15}} >
+            <ParallaxLayer style={{...pLayer}} offset={14} sticky={{start:14, end:17}} >
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Hospital+</h1>
@@ -214,7 +219,7 @@ function HomePage() {
 </div>
 </div>
                 </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={15} sticky={{start:15, end:16}}>
+            <ParallaxLayer style={{...pLayer}} offset={15} sticky={{start:15, end:17}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc Card</h1>
@@ -238,7 +243,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={17} sticky={{start:17, end:18}}>
+            <ParallaxLayer style={{...pLayer}} offset={17} sticky={{start:17, end:17}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc+ Emergency</h1>
@@ -251,6 +256,50 @@ function HomePage() {
 </div>
             </ParallaxLayer>
 
+            <ParallaxLayer offset={18}> 
+
+            <div className={styles.highlightContainer}>
+
+           {/* <div className={styles.highlightHeading}>
+            <h1>Highlight Features</h1>
+           </div> */}
+
+           
+
+            <div className={styles.highlightBox}>
+
+                <div className={styles.highlightElement}>
+                <h2>Available on ALL devices</h2>
+                <div className={styles.pill}>Know More</div>
+
+                <img src={hi1}className={styles.highlightImage} alt="" />
+
+                </div>
+
+                <div className={styles.highlightElement}>
+                <h2>Healthcare in Your Finger</h2>
+                <div className={styles.pill}>Know More</div>
+                <img src={hi2}className={styles.highlightImage} alt="" />
+                </div>  
+
+                <div className={styles.highlightElement}>
+                <h2>Available on ALL devices</h2>
+                <div className={styles.pill}>Know More</div>
+                <img src={hi3}className={styles.highlightImage} alt="" />
+
+                </div>
+
+                <div className={styles.highlightElement}>
+                <h2>Healthcare in Your Finger</h2>
+                <div className={styles.pill}>Know More</div>
+                <img src={hi4}className={styles.highlightImage} alt="" />
+                </div>                
+
+            </div>
+            </div>
+
+            </ParallaxLayer>
+            
      </Parallax>
  </div>
       
