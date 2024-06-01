@@ -19,6 +19,7 @@ import hi1 from '../resources/Available on all devices.png'
 import hi2 from '../resources/A Complete Solution.png'
 import hi3 from '../resources/Healthcare at your fingertips.png'
 import hi4 from '../resources/Modern meets conventional.png'
+import { display } from "@mui/system";
 // import highlight from '../resources/highlighter.svg'
 
 
@@ -30,21 +31,21 @@ function HomePage() {
       
         const pLayer={width:"auto",marginLeft:"5%",marginRight:"5%"}
         const parallaxRef = useRef();
-        const [scrolled, setScrolled] = useState(true);
+        const [scrolled, setScrolled] = useState(false);
         useEffect(() => {
             const parallax = parallaxRef.current.container.current;
             const handleScroll = () => {
               
-             if(parallax.scrollTop>=0&&parallax.scrollTop<3*parallax.clientHeight){
-              console.log("set")
+             if(parallax.scrollTop>0){
+            
               setScrolled(true)
-             } else{
-              console.log("unset")
+             } else if(parallax.scrollTop==0){
+           
               setScrolled(false)
              }
-            if(parallax.scrollTop>=4*parallax.clientHeight){
+            if(parallax.scrollTop>=2*parallax.clientHeight){
 
-                const scrollPosition = parallax.scrollTop-4*parallax.clientHeight;
+                const scrollPosition = parallax.scrollTop-2*parallax.clientHeight;
                 const totalScrollHeight = parallax.clientHeight*8 - parallax.clientHeight;
              
                 const scrollFraction = scrollPosition / totalScrollHeight;
@@ -71,52 +72,46 @@ function HomePage() {
      return <div className={styles.herobackground} >
  
     
-     <Parallax ref={parallaxRef} pages={19} >  
+     <Parallax ref={parallaxRef} pages={18} >  
 
-         {/* <ParallaxLayer offset={0}  style={{ ...alignCenter, justifyContent: 'center',backgroundColor:"#286d8d" }}>
-                 <img src={logo} alt="logo" className={styles.logo}/>
-                
-         </ParallaxLayer> */}
          <ParallaxLayer offset={0} sticky={{start:0,end:19}} style={{justifyContent:"center",zIndex:"3"}}> 
 
-         <nav className={scrolled==true?`${styles.navbarWhite}`:`${styles.navbarBlue}`}>
-      <div className={styles.container}>
-        <div className={styles.navcontent}>
-          <div className={styles.navright}>
-            <button className={scrolled==true?`${styles.navbuttonWhite}`:`${styles.navbuttonBlue}` }>
+         <nav className={styles.navbarWhite}>
+    
+          <div className={scrolled==true?`${styles.navrighthidden}`:`${styles.navright}`}>
+            <div className={styles.navbuttonWhite}>
               Home
-            </button>
-            <button className={scrolled==true?`${styles.newbuttonWhite}`:`${styles.newbuttonBlue}`}>
+            </div>
+                 <div className={styles.navbuttonWhite}>
               Features
-            </button>
-            <button className={scrolled==true?`${styles.newbuttonWhite}`:`${styles.newbuttonBlue}`}>
+            </div>
+                 <div className={styles.navbuttonWhite}>
               Ecosystem
-            </button>
-            <button className={scrolled==true?`${styles.newbuttonWhite}`:`${styles.newbuttonBlue}`}>
+            </div>
+                 <div className={styles.navbuttonWhite}>
               FAQs
-            </button>
-            <button className={scrolled==true?`${styles.newbuttonWhite}`:`${styles.newbuttonBlue}`}>
+            </div>
+                 <div className={styles.navbuttonWhite}>
               Blog
-            </button>
-            <button className={scrolled==true?`${styles.newbuttonWhite}`:`${styles.newbuttonBlue}`}>
-              Contact Us
-            </button>
-           {/* <MenuIcon /> */}
+            </div>
+                 <div className={styles.navbuttonWhite}>
+              Contact 
+            </div>
           </div>
-        </div>
-      </div>
+          
+      {scrolled==true?<MenuIcon ></MenuIcon>:<div></div>}
     </nav>
 
 
          </ParallaxLayer>
  
-         <ParallaxLayer sticky={{start:0, end:2}} style={{zIndex:"2"}} >
+         <ParallaxLayer  sticky={{start:0, end:1}} style={{zIndex:"2"}} >
              <img src={img1} className={styles.img1} alt="#"></img>
              {/* <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
      
          </ParallaxLayer>                              
  
-         <ParallaxLayer sticky={{ start: 0, end: 1 }} speed={1} style={{ ...alignCenter,backgroundColor:"#286d8d" }}>
+         <ParallaxLayer  style={{ ...alignCenter,backgroundColor:"#286d8d" }}>
            
                  <div className={`${styles.card}`}>                            
                      <h1>#betterthanpaper</h1>         
@@ -127,7 +122,7 @@ function HomePage() {
                                 
          </ParallaxLayer>
  
-         <ParallaxLayer sticky={{ start: 2, end: 2 }} speed={1} style={{ ...alignCenter,backgroundColor:"#286d8d" }}>
+         <ParallaxLayer sticky={{ start: 1, end: 1}} style={{ ...alignCenter,backgroundColor:"#286d8d" }}>
              
          <div className={`${styles.card}`}>                            
                      <h1>#cheaperthanpaper</h1>         
@@ -136,7 +131,7 @@ function HomePage() {
                  </div> 
  
          </ParallaxLayer>
-         <ParallaxLayer offset={3} sticky={{start:3,end:10}}>
+         <ParallaxLayer offset={2} sticky={{start:2,end:9}}>
           <div className={styles.featureimage} >
    {caroData.map((item,idx)=>(
      <img className={idx===currentImageIndex?`${styles.imgactive}`:`${styles.imginactive}`} src={item} alt="#"></img>
@@ -144,7 +139,7 @@ function HomePage() {
   
      </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={2} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Bringing Families Together</h1>
@@ -154,7 +149,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer offset={4} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={3} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Complete Medical Coverage</h1>
@@ -164,7 +159,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer offset={5} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={4} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Most Cost Effective Solution</h1>
@@ -174,7 +169,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer offset={6} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={5} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Extremely Device-Friendly</h1>
@@ -184,7 +179,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer offset={7} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={6} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>User Friendly</h1>
@@ -194,7 +189,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer offset={8} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={7} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Fitness Tracking</h1>
@@ -204,7 +199,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer offset={9} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={8} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>AI-Powered</h1>
@@ -214,7 +209,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer offset={10}  style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer offset={9}  style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Always Improving </h1>
@@ -224,7 +219,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer style={{...pLayer}} offset={11} sticky={{start:11, end:16}} >
+        <ParallaxLayer style={{...pLayer}} offset={10} sticky={{start:10, end:15}} >
 <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc+ Nursing</h1>
@@ -236,7 +231,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={12} sticky={{start:12, end:16}}>
+            <ParallaxLayer style={{...pLayer}} offset={11} sticky={{start:11, end:15}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>DocAssist</h1>
@@ -248,7 +243,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={13} sticky={{start:13, end:16}} >
+            <ParallaxLayer style={{...pLayer}} offset={12} sticky={{start:12, end:15}} >
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Hospital+</h1>
@@ -260,7 +255,7 @@ function HomePage() {
 </div>
 </div>
                 </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={14} sticky={{start:14, end:16}}>
+            <ParallaxLayer style={{...pLayer}} offset={13} sticky={{start:13, end:15}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc Card</h1>
@@ -272,7 +267,7 @@ function HomePage() {
 </div>
 </div>
                 </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={15} sticky={{start:15, end:16}}>
+            <ParallaxLayer style={{...pLayer}} offset={14} sticky={{start:14, end:15}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc+ Pharma</h1>
@@ -284,7 +279,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={16} sticky={{start:16, end:16}}>
+            <ParallaxLayer style={{...pLayer}} offset={15} sticky={{start:15, end:15}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc+ Emergency</h1>
@@ -297,7 +292,7 @@ function HomePage() {
 </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={17}> 
+            <ParallaxLayer offset={16}> 
 
             <div className={styles.highlightContainer}>
 
