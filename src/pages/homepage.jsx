@@ -74,11 +74,11 @@ function HomePage() {
     
      <Parallax ref={parallaxRef} pages={18} >  
 
-         <ParallaxLayer offset={0} sticky={{start:0,end:19}} style={{justifyContent:"center",zIndex:"3"}}> 
+         <ParallaxLayer offset={0} sticky={{start:0,end:18}} style={{justifyContent:"center",zIndex:"3"}}> 
 
-         <nav className={styles.navbarWhite}>
+         {scrolled==false?<nav className={styles.navbarWhite}>
     
-          <div className={scrolled==true?`${styles.navrighthidden}`:`${styles.navright}`}>
+          <div className={styles.navright}>
             <div className={styles.navbuttonWhite}>
               Home
             </div>
@@ -99,8 +99,7 @@ function HomePage() {
             </div>
           </div>
           
-      {scrolled==true?<MenuIcon ></MenuIcon>:<div></div>}
-    </nav>
+    </nav>:<MenuIcon style={{padding:"1.5%",transition:"ease-in-out 1s"}}></MenuIcon>}
 
 
          </ParallaxLayer>
@@ -292,7 +291,7 @@ function HomePage() {
 </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={16}> 
+            <ParallaxLayer offset={16}  > 
 
             <div className={styles.highlightContainer}>
 
