@@ -240,6 +240,8 @@ right: 10%;
 {
   margin-top: -6%;
   opacity: 100%;
+  /* background-color: blue; */
+  
   
 }
 
@@ -263,6 +265,7 @@ right: 10%;
 .highlightElement{
 
   width:48%;  
+  height: 80vh;
   border-radius:10px;
   /* background-color: #F2F0EF; */
   margin-left: 1%;
@@ -293,6 +296,7 @@ right: 10%;
   height: 100vh;
   background-image: url('../resources/Hospital\ Corridor\ Photos\ and\ Images\ _\ Shutterstock.png');
   background-color: rgba(65, 165, 186, .8);
+  background-size: cover;
   background-blend-mode:multiply ;
   
   /* z-index: -1; */
@@ -300,11 +304,13 @@ right: 10%;
 
 .bt{
   padding: 15%;
+  height: 50vh;
+  /* background-color: red; */
 }
 
 .bt h1{
   padding-left: 45%;
-  padding-top:15%;
+  /* padding-top:15%;  */
   font-family:"poppins";
   color: white;
   font-size: 45px;
@@ -320,9 +326,10 @@ right: 10%;
 
 .btImg{
   position: absolute;
-  top: 15%;
+  top:-5%;
   left:5%;
-  height: 90%;
+  height: 80%;
+
   padding-top: 10%;  
   
 }

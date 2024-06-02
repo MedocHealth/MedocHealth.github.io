@@ -30,7 +30,7 @@ function HomePage() {
     const caroData=[f1,f2,f3,f4,f5,f6,f7,f8];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const alignCenter = { display: 'flex', alignItems: 'center' , justifyContent: 'flex-end'}
-      
+      const [gridHeight,setHeight]=useState("125vh");
         const pLayer={width:"auto",marginLeft:"5%",marginRight:"5%"}
         const parallaxRef = useRef();
         const [scrolled, setScrolled] = useState(false);
@@ -74,7 +74,7 @@ function HomePage() {
      return <div className={styles.herobackground} >
  
     
-     <Parallax ref={parallaxRef} pages={20} >  
+     <Parallax ref={parallaxRef} pages={19} >  
 
          <ParallaxLayer offset={0} sticky={{start:0,end:18}} style={{justifyContent:"center",zIndex:"3"}}> 
 
@@ -293,7 +293,7 @@ function HomePage() {
 </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={16}  style={{zIndex:"1", backgroundColor:"white",height:"125vh", paddingBottom:"10%"}}> 
+            <ParallaxLayer offset={16}  style={{zIndex:"1", backgroundColor:"white",paddingBottom:"10%"}}> 
 
             <div className={styles.highlightContainer} >
 
@@ -319,7 +319,7 @@ function HomePage() {
                 <img src={hi2}className={styles.highlightImage} alt="" />
                 </div>  
 
-                <div className={styles.highlightElement}>
+                {/* <div className={styles.highlightElement}>
                 <h2>Available on ALL devices</h2>
                 <div className={styles.pill}>Know More</div>
                 <img src={hi3}className={styles.highlightImage} alt="" />
@@ -330,7 +330,7 @@ function HomePage() {
                 <h2>Healthcare in Your Finger</h2>
                 <div className={styles.pill}>Know More</div>
                 <img src={hi4}className={styles.highlightImage} alt="" />
-                </div>                
+                </div>                 */}
 
             </div>
             </div>
@@ -345,7 +345,7 @@ function HomePage() {
               </div>              
             </ParallaxLayer>
 
-            <ParallaxLayer offset={17} style={{zIndex:"2"}}>
+            <ParallaxLayer offset={17} style={{zIndex:"10",paddingBottom:"10%"}}>
               <div className={styles.bt}>
                 <img src={bt} className={styles.btImg} alt="" />
                 <h1>It’s perfect time to join the Medoc Ecosystem.</h1>
@@ -354,7 +354,7 @@ function HomePage() {
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={18} style={{marginTop:"10%", zIndex:"1", backgroundColor:"white"}}>
+            <ParallaxLayer offset={18} style={{ zIndex:"1", backgroundColor:"white"}}>
 
             </ParallaxLayer>
             
