@@ -134,6 +134,8 @@
 }
 
 
+
+
 @keyframes fadeInAnimation {
     from {
         opacity: 0;
@@ -236,7 +238,9 @@ right: 10%;
 
 .highlightContainer
 {
-  margin-top: 5%;
+  margin-top: -6%;
+  opacity: 100%;
+  
 }
 
 .highlightHeading
@@ -252,6 +256,8 @@ right: 10%;
   width: auto;
   margin-left: 5%;
   margin-right: 5%;
+  
+  
 }
 
 .highlightElement{
@@ -281,6 +287,51 @@ right: 10%;
   width: 20%;
   margin-left: 38%;
   margin-top: 5%;
+}
+
+.corridordiv{
+  height: 100vh;
+  background-image: url('../resources/Hospital\ Corridor\ Photos\ and\ Images\ _\ Shutterstock.png');
+  background-color: rgba(65, 165, 186, .8);
+  background-blend-mode:multiply ;
+  
+  /* z-index: -1; */
+}
+
+.bt{
+  padding: 15%;
+}
+
+.bt h1{
+  padding-left: 45%;
+  padding-top:15%;
+  font-family:"poppins";
+  color: white;
+  font-size: 45px;
+}
+
+.bt p{
+  padding-left: 45%;  
+  font-family:"poppins";
+  color: white;
+  padding-top: 3%;
+  font-size: 20px;
+}
+
+.btImg{
+  position: absolute;
+  top: 15%;
+  left:5%;
+  height: 90%;
+  padding-top: 10%;  
+  
+}
+
+.playbutton{
+ position: relative;
+ left: 45%;
+ padding-top: 2%;
+ width: 30vh;
 }
 
 
@@ -372,6 +423,8 @@ right: 10%;
     box-shadow: 5px 5px 5px 5px grey;
   }
 }
+
+
 
 @media screen and (max-width:1075px){
   .img1{
@@ -642,3 +695,4 @@ width: 40%;
     box-shadow: 5px 5px 5px 5px grey;
   }
 }
+

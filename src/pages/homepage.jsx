@@ -21,7 +21,9 @@ import hi3 from '../resources/Healthcare at your fingertips.png'
 import hi4 from '../resources/Modern meets conventional.png'
 import { display } from "@mui/system";
 // import highlight from '../resources/highlighter.svg'
-
+import corridor from '../resources/Hospital Corridor Photos and Images _ Shutterstock.png'
+import bt from '../resources/image-05-removebg-preview.png'
+import playbutton from '../resources/googleplay-grey.png'
 
 
 function HomePage() {
@@ -72,7 +74,7 @@ function HomePage() {
      return <div className={styles.herobackground} >
  
     
-     <Parallax ref={parallaxRef} pages={18} >  
+     <Parallax ref={parallaxRef} pages={20} >  
 
          <ParallaxLayer offset={0} sticky={{start:0,end:18}} style={{justifyContent:"center",zIndex:"3"}}> 
 
@@ -291,9 +293,9 @@ function HomePage() {
 </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={16}  > 
+            <ParallaxLayer offset={16}  style={{zIndex:"1", backgroundColor:"white",height:"125vh", paddingBottom:"10%"}}> 
 
-            <div className={styles.highlightContainer}>
+            <div className={styles.highlightContainer} >
 
            {/* <div className={styles.highlightHeading}>
             <h1>Highlight Features</h1>
@@ -334,7 +336,29 @@ function HomePage() {
             </div>
 
             </ParallaxLayer>
+{/* <ParallaxLayer offset={17} >
+  <div style={{height:"100vh",backgroundColor:"white",opacity:".1"}}>hi</div>
+</ParallaxLayer> */}
+            <ParallaxLayer  offset={17}sticky={{start:16, end:18}} style={{zIndex:"-2"}} >
+             
+              <div className={styles.corridordiv}>              
+              </div>              
+            </ParallaxLayer>
+
+            <ParallaxLayer offset={17} style={{zIndex:"2"}}>
+              <div className={styles.bt}>
+                <img src={bt} className={styles.btImg} alt="" />
+                <h1>It’s perfect time to join the Medoc Ecosystem.</h1>
+                <p>Own your health and Life.</p>
+                <img src={playbutton} className={styles.playbutton} alt="" />
+              </div>
+            </ParallaxLayer>
+
+            <ParallaxLayer offset={18} style={{marginTop:"10%", zIndex:"1", backgroundColor:"white"}}>
+
+            </ParallaxLayer>
             
+     {/* <ParallaxLayer offset={18}style={{zIndex:"1"}}></ParallaxLayer> */}
      </Parallax>
  </div>
       
