@@ -3,6 +3,8 @@ import styles from '../css/homepage.module.css';
 import { Parallax,ParallaxLayer } from "@react-spring/parallax";
 import MenuIcon from '@mui/icons-material/Menu';
 
+
+
 import img1 from '../resources//phone medoc.png';
 import logo from '../resources/logo-medoc.png';
 
@@ -24,9 +26,13 @@ import { display } from "@mui/system";
 import corridor from '../resources/Hospital Corridor Photos and Images _ Shutterstock.png'
 import bt from '../resources/image-05-removebg-preview.png'
 import playbutton from '../resources/googleplay-grey.png'
+import fPlayButton from '../resources/googleplay-black.png';
+import { Drawer, IconButton } from "@mui/material";
+import { drawerList } from "./drawerlist";
 
 
 function HomePage() {
+  
     const caroData=[f1,f2,f3,f4,f5,f6,f7,f8];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const alignCenter = { display: 'flex', alignItems: 'center' , justifyContent: 'flex-end'}
@@ -34,6 +40,12 @@ function HomePage() {
         const pLayer={width:"auto",marginLeft:"5%",marginRight:"5%"}
         const parallaxRef = useRef();
         const [scrolled, setScrolled] = useState(false);
+           
+        const [sidebarOpen,setSideBarOpen]=useState(false)
+
+        const handleSidebarClose=()=>setSideBarOpen(false)
+        const handleSidebarOpen=()=>setSideBarOpen(true) 
+
         useEffect(() => {
             const parallax = parallaxRef.current.container.current;
             const handleScroll = () => {
@@ -68,13 +80,14 @@ function HomePage() {
           
 
 
-         
+
+     
 
 
      return <div className={styles.herobackground} >
  
     
-     <Parallax ref={parallaxRef} pages={19} >  
+     <Parallax ref={parallaxRef} pages={19.6} >  
 
          <ParallaxLayer offset={0} sticky={{start:0,end:18}} style={{justifyContent:"center",zIndex:"3"}}> 
 
@@ -84,7 +97,7 @@ function HomePage() {
             <div className={styles.navbuttonWhite}>
               Home
             </div>
-                 <div className={styles.navbuttonWhite}>
+                 <div className={styles.navbuttonWhite}  >
               Features
             </div>
                  <div className={styles.navbuttonWhite}>
@@ -101,15 +114,21 @@ function HomePage() {
             </div>
           </div>
           
-    </nav>:<MenuIcon style={{padding:"1.5%",transition:"ease-in-out 1s"}}></MenuIcon>}
+    </nav>:
+    <div>
+      <MenuIcon onClick={handleSidebarOpen} style={{padding:"1.5%",transition:"ease-in-out 1s"}}></MenuIcon>
+      <Drawer anchor={"left"} open={sidebarOpen} onClose={handleSidebarClose} sx={{backgroundColor:"rgba(255, 255, 255, 0.5)"}}>
+        {drawerList("left")}
+    </Drawer>
+
+      </div>}
 
 
          </ParallaxLayer>
  
          <ParallaxLayer  sticky={{start:0, end:1}} style={{zIndex:"2"}} >
              <img src={img1} className={styles.img1} alt="#"></img>
-             {/* <svg className={styles.curve} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,96C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
-     
+             
          </ParallaxLayer>                              
  
          <ParallaxLayer  style={{ ...alignCenter,backgroundColor:"#286d8d" }}>
@@ -140,7 +159,7 @@ function HomePage() {
   
      </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
+        <ParallaxLayer  offset={2} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Bringing Families Together</h1>
@@ -292,14 +311,11 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-
-            <ParallaxLayer offset={16}  style={{zIndex:"1", backgroundColor:"white",paddingBottom:"10%"}}> 
+   
+            <ParallaxLayer offset={16}  style={{zIndex:"1",backgroundColor:"white"}}> 
 
             <div className={styles.highlightContainer} >
 
-           {/* <div className={styles.highlightHeading}>
-            <h1>Highlight Features</h1>
-           </div> */}
 
            
 
@@ -336,16 +352,14 @@ function HomePage() {
             </div>
 
             </ParallaxLayer>
-{/* <ParallaxLayer offset={17} >
-  <div style={{height:"100vh",backgroundColor:"white",opacity:".1"}}>hi</div>
-</ParallaxLayer> */}
+
             <ParallaxLayer  offset={17}sticky={{start:16, end:18}} style={{zIndex:"-2"}} >
              
               <div className={styles.corridordiv}>              
               </div>              
             </ParallaxLayer>
 
-            <ParallaxLayer offset={17} style={{zIndex:"10",paddingBottom:"10%"}}>
+            <ParallaxLayer offset={17} style={{zIndex:"10"}}>
               <div className={styles.bt}>
                 <img src={bt} className={styles.btImg} alt="" />
                 <h1>It’s perfect time to join the Medoc Ecosystem.</h1>
@@ -354,14 +368,68 @@ function HomePage() {
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={18} style={{ zIndex:"1", backgroundColor:"white"}}>
+            <ParallaxLayer offset={18} style={{ zIndex:"2",backgroundColor:"white"}}>
+<div className={styles.contactus}>
+  <h1>Looking for Support?</h1>
+  <p>Got a Question? We'd love to hear from you. Send us a message and we will respond you as soon as possible</p>
+  <div className={styles.contactform}>
+    <div className={styles.formrow1}>
+      <input placeholder="Your Name*"></input>
+      <input placeholder="Your Email*"></input>
+      </div>
+      <div className={styles.formrow2}>
+
+      <input placeholder="This question is about"></input>
+      </div>
+      <div className={styles.formrow3}>
+
+      <input placeholder="Your message..." type="text"></input>
+      </div>
+      <div className={styles.formbutton}>Send your message</div>
+      
+
+  </div>
+</div>
 
             </ParallaxLayer>
+            <ParallaxLayer offset={19}>
+            <div className={styles.footer}>
+
+            <div className={styles.footerflex}>
+                <div className={styles.footercontb}>  
+                  <img src={logo}></img>
+                  <p>The complete healthcare ecosystem building towards better accessibility to healthcare and supporting you with medical finances and family medicine.</p>
+                </div>
+                <div className={styles.footerconts}>
+                  <h1>Usefull Links</h1>
+                  <p>How it Works?</p>
+                  <p>Privacy Policy</p>
+                  <p>Terms of Service</p>
+                  <p>Site Map</p>
+                </div>
+                <div className={styles.footerconts}>
+                  <h1>Support</h1>
+                  <p>FAQs</p>
+                  <p>Editor Help</p>
+                  <p>Life   Chatting</p>
+                  <p>Contact Us</p>
+                </div>
+                <div className={styles.footercontm}>
+                <img src={fPlayButton} className={styles.footerplaybutton} alt="" />
+                </div>
+              </div>
+                <h6 >2022 All right reserved</h6>
+            </div>
+            </ParallaxLayer>
+       
             
-     {/* <ParallaxLayer offset={18}style={{zIndex:"1"}}></ParallaxLayer> */}
+    
      </Parallax>
  </div>
       
 
 }
 export default HomePage;
+
+
+
