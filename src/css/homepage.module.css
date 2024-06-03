@@ -211,7 +211,7 @@ right: 10%;
   background-color: white;
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
   
 }
 .userdes{
@@ -222,10 +222,21 @@ right: 10%;
 
 }
 .userdes h1{
-  font-size: 50px;
+  font-size: 60px;
   padding-bottom: 5%;
   font-family: 'Poppins';
 }
+/* .userdes p{
+  font-size: 20px;
+  font-family: 'Poppins';
+} */
+.userappdescription img{
+  /* width: 0vh; */
+  padding-right: 10%;
+  height: 80vh;
+}
+
+
 .userdes p{
   font-size: 15px;
   color:grey;
@@ -240,11 +251,6 @@ right: 10%;
   color:#41c1ba;
 }
 
-.userappdescription img{
-  /* width: 0vh; */
-  
-  height: 80vh;
-}
 
 .highlightContainer
 {
@@ -277,16 +283,18 @@ right: 10%;
 .highlightElement{
 
   width:48%;  
-  height: 80vh;
+  height: 50vh;
   border-radius:10px;
   /* background-color: #F2F0EF; */
   margin-left: 1%;
   margin-right:1%;
   margin-top: 10px;
   text-align: center;
-  padding-top: 3%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   font-family: 'Poppins';
-  box-shadow: 5px 5px 5px 5px grey;
+  box-shadow: 2px 2px 2px 2px grey;
+  
 }
 
 .highlightImage{
@@ -343,9 +351,7 @@ right: 10%;
   top:-5%;
   left:5%;
   height: 80%;
-
   padding-top: 10%;  
-  
 }
 
 .playbutton{
@@ -356,13 +362,13 @@ right: 10%;
 }
 
 .contactus{
+  margin-top: -5%;
   font-family:"poppins";
   height: 100vh;
   padding-left: 15%;
   padding-right: 15%;
- 
   background-color: #EEEEEE; 
-  padding-top: 3%;
+  padding-top: 7%;
   text-align: center;
 }
 .contactus h1{
@@ -381,7 +387,6 @@ right: 10%;
 .contactform input{
   border: solid 1px teal;
   /* box-shadow: 1px 1px 1px ; */
-
 }
 .formrow1{
   width: 100%;
@@ -425,14 +430,13 @@ right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   height: 7vh;
   background-color: teal;
   width: 30%;
 }
 .footer{
-  height: 60vh;
-  padding-top: 3%;
+  height: 52vh;
+  padding-top: 4%;
   background-color: #EEEEEE;
 }
 .footerflex{
@@ -442,8 +446,8 @@ right: 10%;
   padding-left: 10%;
   padding-right: 10%;
   justify-content: space-between;
-  
-}
+  }
+
 .footercontb{
   color: teal;
   width: 40%;
@@ -456,7 +460,6 @@ right: 10%;
   flex-direction: column;
   gap:5%;
   width: 17.5%;
-
   padding-bottom: 1%;
   padding-left: 3%;
   padding-right: 3%;
@@ -468,17 +471,15 @@ font-size: 20px;
 .footercontm{
   padding-top: 3%;
   width:25%;
-  
 }
 .footermedoc{
   height: 7vh;
 }
 .footerconts p{
   color: gray;
-  font-weight: 250;
+  font-weight: 200;
 }
 .footer h6{
-  /* position: absolute; */
   color: gray;
   font-weight: 200;
   bottom: 0px;
@@ -497,11 +498,8 @@ width: 80%;
     left: 8%;
     height: 80%;
     }
-    .card {       
-    
-
+    .card {      
       height: 7.8rem;
- 
       width: 38%;    
       border-radius: 10px;
       background: transparent;       
@@ -526,33 +524,24 @@ width: 80%;
     }
 
   .imgactive{
-    position: absolute;
+  position: absolute;
   opacity: 1;
   right: 10%;  
   height: 65vh;
-  
-  
   }
   .imginactive{
-  
     position: absolute;
     opacity: 0;
     height: 70vh;
-   
-  right: 10%;
-  
+    right: 10%;
   }
   .featuretext h1{
-    font-size: 45px;
-    
+    font-size: 45px;  
   }
   .featuretext p{
     font-size: 18px;
-  
     color: gray;
   }
-  
-  
   .userdes h1{
     font-size: 45px;
     padding-bottom: 5%;
@@ -589,10 +578,7 @@ width: 80%;
     height: 80%;
     }
     .card {       
-    
-
       height: 7.8rem;
- 
       width: 38%;    
       border-radius: 10px;
       background: transparent;       
@@ -617,22 +603,17 @@ width: 80%;
     }
 
   .imgactive{
-    position: absolute;
+  position: absolute;
   opacity: 1;
   right: 10%;  
   height: 65vh;
-  
-  
   }
   .imginactive{
-  
     position: absolute;
     opacity: 0;
     height: 70vh;
-   
-  right: 10%;
-  
-  }
+    right: 10%;
+}
   .featuretext h1{
     font-size: 42px;
     

@@ -9,6 +9,7 @@ import img1 from '../resources//phone medoc.png';
 import logo from '../resources/logo-medoc.png';
 
 import ua1 from '../resources/userapp1.png';
+import ua2 from '../resources/docassist.png';
 import f1 from '../resources/feature1.png';
 import f2 from '../resources/feature2.png';
 import f3 from '../resources/feature3.png';
@@ -239,7 +240,7 @@ function HomePage() {
 
 </div> 
         </ParallaxLayer>
-        <ParallaxLayer style={{...pLayer}} offset={10} sticky={{start:10, end:15}} >
+        <ParallaxLayer style={{...pLayer}} offset={10} sticky={{start:10, end:14}} >
 <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>End User Application</h1>
@@ -261,7 +262,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={11} sticky={{start:11, end:15}}>
+            <ParallaxLayer style={{...pLayer}} offset={11} sticky={{start:11, end:14}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>DocAssist</h1>
@@ -282,7 +283,7 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={12} sticky={{start:12, end:15}} >
+            <ParallaxLayer style={{...pLayer}} offset={12} sticky={{start:12, end:14}} >
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Hospital+</h1>
@@ -299,7 +300,7 @@ function HomePage() {
 </div>
 </div>
                 </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={13} sticky={{start:13, end:15}}>
+            <ParallaxLayer style={{...pLayer}} offset={13} sticky={{start:13, end:14}}>
             <div className={styles.userappdescription}>
               <div className={styles.userdes}>
                   <h1>Medoc Card</h1>
@@ -317,16 +318,20 @@ function HomePage() {
               </div>
             </div>
                 </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={14} sticky={{start:14, end:15}}>
+            <ParallaxLayer style={{...pLayer}} offset={14} sticky={{start:14, end:14}}>
             <div className={styles.userappdescription}>
                 <div className={styles.userdes}>
                   
                 <h1>Medoc+ Pharma</h1>
-                <p>A dynamic application for pharmacies, 
-hospital/clinic receptions, nurses and 
-paramedics which changes according to 
-the role
-</p>
+       <h3>
+       Pharmacies:
+       <p>Seamlessly track and manage medication stock levels.</p>
+       </h3>
+       <h3> Hospital/Clinic Receptions:</h3>
+       <p>
+Facilitate smooth scheduling of patient appointments, optimizing clinic workflow and reducing wait times.</p>
+       <h3>Nurses and Paramedics:</h3>
+       <p>Access comprehensive patient care plans and medical histories.</p>
                 </div>
                 <div>
                 <img src={ua1} alt="#"></img>
@@ -393,7 +398,7 @@ the role
               </div>              
             </ParallaxLayer>
 
-            <ParallaxLayer offset={16} style={{zIndex:"1"}}>
+            <ParallaxLayer offset={16} style={{zIndex:"2"}}>
               <div className={styles.bt}>
                 <img src={bt} className={styles.btImg} alt="" />
                 <h1>It’s perfect time to join the Medoc Ecosystem.</h1>
@@ -402,7 +407,7 @@ the role
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={17}  style={{backgroundColor:"red",zIndex:"4"}}>
+            <ParallaxLayer offset={17}  style={{backgroundColor:"red",zIndex:"1"}}>
 <div className={styles.contactus}>
   <h1>Looking for Support?</h1>
   <p>Got a Question? We'd love to hear from you. Send us a message and we will respond you as soon as possible</p>
@@ -464,6 +469,4 @@ the role
 
 }
 export default HomePage;
-
-
 
