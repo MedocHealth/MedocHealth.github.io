@@ -211,7 +211,7 @@ right: 10%;
   background-color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
   
 }
 .userdes{
@@ -222,14 +222,24 @@ right: 10%;
 
 }
 .userdes h1{
-  font-size: 60px;
+  font-size: 50px;
   padding-bottom: 5%;
   font-family: 'Poppins';
 }
 .userdes p{
+  font-size: 15px;
+  color:grey;
+  font-weight: 300;
+  font-family: 'Poppins';
+  padding-bottom: 5%;
+}
+.userdes h3{
+  font-weight:500;
   font-size: 20px;
   font-family: 'Poppins';
+  color:#41c1ba;
 }
+
 .userappdescription img{
   /* width: 0vh; */
   

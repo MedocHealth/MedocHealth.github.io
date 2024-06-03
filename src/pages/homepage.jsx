@@ -87,7 +87,7 @@ function HomePage() {
      return <div className={styles.herobackground} >
  
     
-     <Parallax ref={parallaxRef} pages={19.6} >  
+     <Parallax ref={parallaxRef} pages={18.6} >  
 
          <ParallaxLayer offset={0} sticky={{start:0,end:18}} style={{justifyContent:"center",zIndex:"3",height:"5vh"}}> 
 
@@ -242,8 +242,18 @@ function HomePage() {
         <ParallaxLayer style={{...pLayer}} offset={10} sticky={{start:10, end:15}} >
 <div className={styles.userappdescription}>
 <div className={styles.userdes}>
-<h1>Medoc+ Nursing</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h1>End User Application</h1>
+
+
+  <h3> Nursing Module</h3>
+  <p>Efficiently manage tasks and patient data with customizable settings for a smooth workflow.</p>
+
+  <h3> Pharma Module</h3>
+  <p>Manage medication orders, track inventory, and process payments seamlessly.</p>
+
+  <h3> Paramedics Module</h3>
+  <p>Locate nearby medical facilities, connect with paramedics for swift crisis response.</p>
+                   
 </div>
 
 <div>
@@ -255,7 +265,16 @@ function HomePage() {
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>DocAssist</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  
+                      <h3> Doctors’ Personal Digital Assistant</h3>
+                      <p>Easily manage prescriptions, allergies, and genetic markers with AI assistance.</p>
+                   
+                      <h3> Medical Transcription in Multiple Languages</h3>
+                      <p>Customize medication plans using MedPad templates for precise patient care.</p>
+
+                      <h3> Auto-completion of Medical Prescription</h3>
+                      <p>Streamline your schedule with intuitive booking, customization, and automated reminders.</p>
+                     
 </div>
 
 <div>
@@ -267,7 +286,12 @@ function HomePage() {
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Hospital+</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h3> Hospital Resource Management</h3>
+                      <p>Efficiently allocate and optimize hospital resources.</p>
+                      <h3> Flexible Auto-Scheduling of Surgeries and Appointments</h3>
+                      <p>Seamlessly manage surgical procedures and patient appointments .</p>
+                      <h3> Ecosystem Connect</h3>
+                      <p>Foster seamless integration and communication within the hospital ecosystem.</p>
 </div>
 
 <div>
@@ -277,33 +301,43 @@ function HomePage() {
                 </ParallaxLayer>
             <ParallaxLayer style={{...pLayer}} offset={13} sticky={{start:13, end:15}}>
             <div className={styles.userappdescription}>
-<div className={styles.userdes}>
-<h1>Medoc Card</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+              <div className={styles.userdes}>
+                  <h1>Medoc Card</h1>
+                  
+                      <h3> NFC & QR based Card</h3>
+                      <p>Effortlessly manage your healthcare with a simple scan or tap.</p>
+                      <h3> Seamless Healthcare Access</h3>
+                      <p>Experience hassle-free healthcare services at your fingertips</p>
+                      <h3> Instant Medical Information</h3>
+                      <p>Access vital medical data anytime, anywhere.</p>
+              </div>
 
-<div>
-<img src={ua1} alt="#"></img>
-</div>
-</div>
+              <div>
+                <img src={ua1} alt="#"></img>
+              </div>
+            </div>
                 </ParallaxLayer>
             <ParallaxLayer style={{...pLayer}} offset={14} sticky={{start:14, end:15}}>
             <div className={styles.userappdescription}>
-<div className={styles.userdes}>
-<h1>Medoc+ Pharma</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<div>
-<img src={ua1} alt="#"></img>
-</div>
-</div>
+                <div className={styles.userdes}>
+                  
+                <h1>Medoc+ Pharma</h1>
+                <p>A dynamic application for pharmacies, 
+hospital/clinic receptions, nurses and 
+paramedics which changes according to 
+the role
+</p>
+                </div>
+                <div>
+                <img src={ua1} alt="#"></img>
+              </div>
+            </div>
             </ParallaxLayer>
-            <ParallaxLayer style={{...pLayer}} offset={15} sticky={{start:15, end:15}}>
+            {/* <ParallaxLayer style={{...pLayer}} offset={15} sticky={{start:15, end:15}}>
             <div className={styles.userappdescription}>
 <div className={styles.userdes}>
 <h1>Medoc+ Emergency</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
 </div>
 
 <div>
@@ -311,8 +345,8 @@ function HomePage() {
 </div>
 </div>
             </ParallaxLayer>
-   
-            <ParallaxLayer offset={16}  style={{zIndex:"1",backgroundColor:"white"}}> 
+    */}
+            <ParallaxLayer offset={15}  style={{zIndex:"1",backgroundColor:"white"}}> 
 
             <div className={styles.highlightContainer} >
 
@@ -353,13 +387,13 @@ function HomePage() {
 
             </ParallaxLayer>
 
-            <ParallaxLayer  offset={17}sticky={{start:16, end:18}} style={{zIndex:"-2"}} >
+            <ParallaxLayer  offset={16}sticky={{start:15, end:17}} style={{zIndex:"-2"}} >
              
               <div className={styles.corridordiv}>              
               </div>              
             </ParallaxLayer>
 
-            <ParallaxLayer offset={17} style={{zIndex:"1"}}>
+            <ParallaxLayer offset={16} style={{zIndex:"1"}}>
               <div className={styles.bt}>
                 <img src={bt} className={styles.btImg} alt="" />
                 <h1>It’s perfect time to join the Medoc Ecosystem.</h1>
@@ -368,7 +402,7 @@ function HomePage() {
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={18}  style={{backgroundColor:"red",zIndex:"4"}}>
+            <ParallaxLayer offset={17}  style={{backgroundColor:"red",zIndex:"4"}}>
 <div className={styles.contactus}>
   <h1>Looking for Support?</h1>
   <p>Got a Question? We'd love to hear from you. Send us a message and we will respond you as soon as possible</p>
@@ -392,7 +426,7 @@ function HomePage() {
 </div>
 
             </ParallaxLayer>
-            <ParallaxLayer offset={19}>
+            <ParallaxLayer offset={18}>
             <div className={styles.footer}>
 
             <div className={styles.footerflex}>
