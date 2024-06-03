@@ -89,7 +89,7 @@ function HomePage() {
     
      <Parallax ref={parallaxRef} pages={19.6} >  
 
-         <ParallaxLayer offset={0} sticky={{start:0,end:18}} style={{justifyContent:"center",zIndex:"3"}}> 
+         <ParallaxLayer offset={0} sticky={{start:0,end:18}} style={{justifyContent:"center",zIndex:"3",height:"5vh"}}> 
 
          {scrolled==false?<nav className={styles.navbarWhite}>
     
@@ -359,7 +359,7 @@ function HomePage() {
               </div>              
             </ParallaxLayer>
 
-            <ParallaxLayer offset={17} style={{zIndex:"10"}}>
+            <ParallaxLayer offset={17} style={{zIndex:"1"}}>
               <div className={styles.bt}>
                 <img src={bt} className={styles.btImg} alt="" />
                 <h1>It’s perfect time to join the Medoc Ecosystem.</h1>
@@ -368,14 +368,14 @@ function HomePage() {
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={18} style={{ zIndex:"2",backgroundColor:"white"}}>
+            <ParallaxLayer offset={18}  style={{backgroundColor:"red",zIndex:"4"}}>
 <div className={styles.contactus}>
   <h1>Looking for Support?</h1>
   <p>Got a Question? We'd love to hear from you. Send us a message and we will respond you as soon as possible</p>
   <div className={styles.contactform}>
     <div className={styles.formrow1}>
-      <input placeholder="Your Name*"></input>
-      <input placeholder="Your Email*"></input>
+      <input type="text" placeholder="Your Name*"></input>
+      <input type="text" placeholder="Your Email*"></input>
       </div>
       <div className={styles.formrow2}>
 
@@ -397,7 +397,7 @@ function HomePage() {
 
             <div className={styles.footerflex}>
                 <div className={styles.footercontb}>  
-                  <img src={logo}></img>
+                  <img src={logo} className={styles.footermedoc}></img>
                   <p>The complete healthcare ecosystem building towards better accessibility to healthcare and supporting you with medical finances and family medicine.</p>
                 </div>
                 <div className={styles.footerconts}>
