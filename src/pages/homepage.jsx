@@ -29,7 +29,7 @@ import playbutton from '../resources/googleplay-grey.png'
 import fPlayButton from '../resources/googleplay-black.png';
 import { Drawer, IconButton } from "@mui/material";
 import { drawerList } from "./drawerlist";
-
+import medoclogoblack from '../resources/medoc-black.png';
 
 function HomePage() {
   
@@ -119,7 +119,7 @@ function HomePage() {
       <MenuIcon onClick={handleSidebarOpen} style={{padding:"1.5%",transition:"ease-in-out 1s"}}></MenuIcon>
       <Drawer anchor={"left"} open={sidebarOpen} onClose={handleSidebarClose} sx={{backgroundColor:"rgba(255, 255, 255, 0.5)"}}>
         {drawerList("left")}
-    </Drawer>
+</Drawer>
 
       </div>}
 
@@ -397,7 +397,7 @@ function HomePage() {
 
             <div className={styles.footerflex}>
                 <div className={styles.footercontb}>  
-                  <img src={logo} className={styles.footermedoc}></img>
+                  <img src={medoclogoblack} className={styles.footermedoc}></img>
                   <p>The complete healthcare ecosystem building towards better accessibility to healthcare and supporting you with medical finances and family medicine.</p>
                 </div>
                 <div className={styles.footerconts}>
