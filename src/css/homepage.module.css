@@ -162,6 +162,8 @@ width: 50%;
 padding-top: 30%;
 padding-bottom: 30%;
 font-family: 'Poppins';
+color: #325a6c
+;
 }
 .featuretext h1{
   font-size: 50px;
@@ -212,6 +214,7 @@ right: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #325a6c;
   
 }
 .userdes{
@@ -259,7 +262,7 @@ right: 10%;
   opacity: 100%;
   /* background-color: blue; */
   padding-bottom: 12%;
-  
+  color: #325a6c;
   
 }
 
@@ -370,6 +373,7 @@ right: 10%;
   background-color: #EEEEEE; 
   padding-top: 7%;
   text-align: center;
+  color: #325a6c;
 }
 .contactus h1{
   font-size: 55px;

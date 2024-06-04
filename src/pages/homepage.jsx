@@ -10,6 +10,9 @@ import logo from '../resources/logo-medoc.png';
 
 import ua1 from '../resources/userapp1.png';
 import ua2 from '../resources/docassist.png';
+import ua3 from '../resources/Patient_Management.png'
+import ua4 from '../resources/medoccard.png'
+import ua5 from '../resources/medoc+pharmaphoto.png'
 import f1 from '../resources/feature1.png';
 import f2 from '../resources/feature2.png';
 import f3 from '../resources/feature3.png';
@@ -164,7 +167,8 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Bringing Families Together</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p>Family Connect-We understand that your family is of core importance to you. Hence, Medoc Health makes it easier for 
+you to connect to your family real-time, no matter how far you are. </p>
 </div>
 
 
@@ -174,7 +178,7 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Complete Medical Coverage</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p>Medoc ensures comprehensive medical coverage, offering seamless access to a wide range of services including preventive care, specialist consultations, and emergency treatment </p>
 </div>
 
 
@@ -184,7 +188,8 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Most Cost Effective Solution</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p> Medoc is free to use for the end-user and is priced at Rs.399/year for doctors, while Hospital+ is for 
+Rs. 2999/year. This is 10% of the average expense hospitals are offered </p>
 </div>
 
 
@@ -194,7 +199,7 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Extremely Device-Friendly</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p>Medoc is extremely device friendly, providing an optimal user experience across smartphones, tablets, and desktops. With intuitive design and responsive features, managing your healthcare needs is effortless and convenient on any device.</p>
 </div>
 
 
@@ -204,7 +209,7 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>User Friendly</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p>  Experience peace of mind with our user-friendly platform that simplifies the process of managing your health, providing you with reliable and complete care at your fingertips. </p>
 </div>
 
 
@@ -214,7 +219,7 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Fitness Tracking</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p> Embedded advanced fitness tracking features which will help you to stay motivated and informed with real-time data and personalized insights to support your health and wellness journey. </p>
 </div>
 
 
@@ -224,7 +229,7 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>AI-Powered</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p>Experience smarter healthcare management with AI-automated features that enhance accuracy, efficiency, and overall user satisfaction. </p>
 </div>
 
 
@@ -234,7 +239,7 @@ function HomePage() {
         <div className={styles.features}>
 <div className={styles.featuretext}>
     <h1>Always Improving </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <p>Committed to continuous innovation, we ensure our platform evolves to meet your healthcare needs more effectively and efficiently over time. </p>
 </div>
 
 
@@ -278,8 +283,8 @@ function HomePage() {
                      
 </div>
 
-<div>
-<img src={ua1} alt="#"></img>
+<div style={{marginRight:35}}>
+<img src={ua2} alt="#"></img>
 </div>
 </div>
             </ParallaxLayer>
@@ -295,8 +300,8 @@ function HomePage() {
                       <p>Foster seamless integration and communication within the hospital ecosystem.</p>
 </div>
 
-<div>
-<img src={ua1} alt="#"></img>
+<div style={{marginTop:220,marginLeft:70}}>
+<img src={ua3} alt="#"></img>
 </div>
 </div>
                 </ParallaxLayer>
@@ -313,8 +318,8 @@ function HomePage() {
                       <p>Access vital medical data anytime, anywhere.</p>
               </div>
 
-              <div>
-                <img src={ua1} alt="#"></img>
+              <div style={{marginTop:170}}>
+                <img src={ua4} alt="#"></img>
               </div>
             </div>
                 </ParallaxLayer>
@@ -334,7 +339,7 @@ Facilitate smooth scheduling of patient appointments, optimizing clinic workflow
        <p>Access comprehensive patient care plans and medical histories.</p>
                 </div>
                 <div>
-                <img src={ua1} alt="#"></img>
+                <img src={ua5} alt="#"></img>
               </div>
             </div>
             </ParallaxLayer>
@@ -369,7 +374,7 @@ Facilitate smooth scheduling of patient appointments, optimizing clinic workflow
                 </div>
 
                 <div className={styles.highlightElement}>
-                <h2>Healthcare in Your Finger</h2>
+                <h2>Healthcare on Your Fingertips</h2>
                 <div className={styles.pill}>Know More</div>
                 <img src={hi2}className={styles.highlightImage} alt="" />
                 </div>  
