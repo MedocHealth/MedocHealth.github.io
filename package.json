@@ -1,7 +1,7 @@
 {
     "name": "medoc",
     "version": "0.1.0",
-    "homepage": "https://MedocHealth.github.io/medoc-website/",
+    "homepage": "https://MedocHealth.github.io",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.11.4",
