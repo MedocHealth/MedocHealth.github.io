@@ -462,7 +462,14 @@ Facilitate smooth scheduling of patient appointments, optimizing clinic workflow
                 <img src={fPlayButton} className={styles.footerplaybutton} alt="" />
                 </div>
               </div>
-                <h6 >2022 All right reserved</h6>
+              <div style={{ position: 'relative', height: 'full', marginBottom: '50px' }}>
+            <div style={{ padding: 0, position: 'absolute', bottom: 0, width: '100%' }}>
+                <p style={{ textAlign: 'center', fontSize: '18px' }}>
+                    &copy; {new Date().getFullYear()} Medoc, ALL rights reserved
+                </p>
+            </div>
+        </div>
+
             </div>
             </ParallaxLayer>
        
