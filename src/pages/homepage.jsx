@@ -4,7 +4,6 @@ import { Parallax,ParallaxLayer } from "@react-spring/parallax";
 import MenuIcon from '@mui/icons-material/Menu';
 
 
-
 import img1 from '../resources//phone medoc.png';
 import logo from '../resources/logo-medoc.png';
 
@@ -34,9 +33,10 @@ import fPlayButton from '../resources/googleplay-black.png';
 import { Drawer, IconButton } from "@mui/material";
 import { drawerList } from "./drawerlist";
 import medoclogoblack from '../resources/medoc-black.png';
+import { Link } from "react-router-dom";
 
 function HomePage() {
-  
+     
     const caroData=[f1,f2,f3,f4,f5,f6,f7,f8];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const alignCenter = { display: 'flex', alignItems: 'center' , justifyContent: 'flex-end'}
@@ -83,8 +83,7 @@ function HomePage() {
           }, [caroData.length,scrolled]);
           
 
-
-
+         
      
 
 
@@ -98,29 +97,29 @@ function HomePage() {
          {scrolled==false?<nav className={styles.navbarWhite}>
     
           <div className={styles.navright}>
-            <div className={styles.navbuttonWhite}>
+            <Link className={styles.navbuttonWhite}>
               Home
-            </div>
-                 <div className={styles.navbuttonWhite}  >
+            </Link>
+                 <Link className={styles.navbuttonWhite}  >
               Features
-            </div>
-                 <div className={styles.navbuttonWhite}>
+            </Link>
+                 <Link className={styles.navbuttonWhite}>
               Ecosystem
-            </div>
-                 <div className={styles.navbuttonWhite}>
-              FAQs
-            </div>
-                 <div className={styles.navbuttonWhite}>
+            </Link>
+                
+              <Link to="/faq" className={styles.navbuttonWhite} >FAQs</Link>
+            
+                 <Link className={styles.navbuttonWhite}>
               Blog
-            </div>
-                 <div className={styles.navbuttonWhite}>
-              Contact 
-            </div>
+            </Link>
+                 <Link className={styles.navbuttonWhite}>
+              Contact Us
+            </Link>
           </div>
           
     </nav>:
     <div>
-      <MenuIcon onClick={handleSidebarOpen} style={{padding:"1.5%",transition:"ease-in-out 1s"}}></MenuIcon>
+      <MenuIcon onClick={handleSidebarOpen} style={{padding:"1.5%",transition:"ease-in-out 1s",marginTop:"10"}}></MenuIcon>
       <Drawer anchor={"left"} open={sidebarOpen} onClose={handleSidebarClose} sx={{backgroundColor:"rgba(255, 255, 255, 0.5)"}}>
         {drawerList("left")}
 </Drawer>
@@ -446,17 +445,17 @@ Facilitate smooth scheduling of patient appointments, optimizing clinic workflow
                 </div>
                 <div className={styles.footerconts}>
                   <h1>Usefull Links</h1>
-                  <p>How it Works?</p>
-                  <p>Privacy Policy</p>
-                  <p>Terms of Service</p>
-                  <p>Site Map</p>
+                  <Link className={styles.footeritems}>How it Works?</Link>
+                  <Link to='/privacypolicy' className={styles.footeritems}>Privacy Policy</Link>
+                  <Link to='/termsofuse' className={styles.footeritems}>Terms of Use</Link>
+                  <Link to='/refundpolicy' className={styles.footeritems}>refund policy</Link>
                 </div>
                 <div className={styles.footerconts}>
                   <h1>Support</h1>
-                  <p>FAQs</p>
-                  <p>Editor Help</p>
-                  <p>Life   Chatting</p>
-                  <p>Contact Us</p>
+                  <Link to='/faq' className={styles.footeritems}>FAQs</Link>
+                  <Link className={styles.footeritems}>Editor Help</Link>
+                  <Link className={styles.footeritems}>Live Chatting</Link>
+                  <Link className={styles.footeritems}>Contact Us</Link>
                 </div>
                 <div className={styles.footercontm}>
                 <img src={fPlayButton} className={styles.footerplaybutton} alt="" />
