@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.34f67800.css",
-    "main.js": "/static/js/main.7f855e12.js",
+    "main.css": "/static/css/main.d8a0e102.css",
+    "main.js": "/static/js/main.faf8cb59.js",
     "static/media/Patient_Management.png": "/static/media/Patient_Management.1950da398f73b42d7d51.png",
     "static/media/medoccard.png": "/static/media/medoccard.857f5725dc8f56cadab8.png",
     "static/media/Hospital Corridor Photos and Images _ Shutterstock.png": "/static/media/Hospital Corridor Photos and Images _ Shutterstock.3eac93028b211417956d.png",
@@ -26,11 +26,11 @@
     "static/media/Available on all devices.png": "/static/media/Available on all devices.c52fc9d9fb8c67fb7736.png",
     "static/media/Modern meets conventional.png": "/static/media/Modern meets conventional.e1843e48a1287cad78b1.png",
     "index.html": "/index.html",
-    "main.34f67800.css.map": "/static/css/main.34f67800.css.map",
-    "main.7f855e12.js.map": "/static/js/main.7f855e12.js.map"
+    "main.d8a0e102.css.map": "/static/css/main.d8a0e102.css.map",
+    "main.faf8cb59.js.map": "/static/js/main.faf8cb59.js.map"
   },
   "entrypoints": [
-    "static/css/main.34f67800.css",
-    "static/js/main.7f855e12.js"
+    "static/css/main.d8a0e102.css",
+    "static/js/main.faf8cb59.js"
   ]
 }
