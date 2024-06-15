@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styles from '../css/faq.css';
 
 
 const FAQ = () => {
