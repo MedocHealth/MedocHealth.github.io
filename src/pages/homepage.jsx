@@ -448,7 +448,7 @@ Facilitate smooth scheduling of patient appointments, optimizing clinic workflow
                   <Link className={styles.footeritems}>How it Works?</Link>
                   <Link to='/privacypolicy' className={styles.footeritems}>Privacy Policy</Link>
                   <Link to='/termsofuse' className={styles.footeritems}>Terms of Use</Link>
-                  <Link to='/refundpolicy' className={styles.footeritems}>refund policy</Link>
+                  <Link to='/refundpolicy' className={styles.footeritems}>Refund policy</Link>
                 </div>
                 <div className={styles.footerconts}>
                   <h1>Support</h1>
