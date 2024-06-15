@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Link, RouterProvider, createBrowserRouter}from 'react-router-dom';
+import {  RouterProvider, createBrowserRouter}from 'react-router-dom';
 import HomePage from './pages/homepage';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import FAQ from './pages/FAQ'

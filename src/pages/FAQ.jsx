@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from '../css/faq.css';
+
 
 const FAQ = () => {
 
@@ -12,7 +12,7 @@ const FAQ = () => {
       });
     });
 
-    // Cleanup function to remove event listeners when the component is unmounted
+
     return () => {
       faqs.forEach((faq) => {
         faq.removeEventListener("click", () => {
@@ -177,7 +177,7 @@ const FAQ = () => {
           </svg>
         </div>
         <div className="answer">
-          <p>It uses innovative QR and NFC technology to manage healthcare needs effortlessly.
+          <p>It uses innovative QR and NFC technology to manage healthcare needs effortlessly.
           </p>
         </div>
       </div>

@@ -118,8 +118,8 @@ function HomePage() {
           </div>
           
     </nav>:
-    <div>
-      <MenuIcon onClick={handleSidebarOpen} style={{padding:"1.5%",transition:"ease-in-out 1s",marginTop:"10"}}></MenuIcon>
+<div>
+      <MenuIcon onClick={handleSidebarOpen} style={{marginLeft:"1%",marginTop:"1%",color:"black"}}></MenuIcon>
       <Drawer anchor={"left"} open={sidebarOpen} onClose={handleSidebarClose} sx={{backgroundColor:"rgba(255, 255, 255, 0.5)"}}>
         {drawerList("left")}
 </Drawer>
@@ -247,7 +247,7 @@ Rs. 2999/year. This is 10% of the average expense hospitals are offered </p>
         <ParallaxLayer style={{...pLayer}} offset={10} sticky={{start:10, end:14}} >
 <div className={styles.userappdescription}>
 <div className={styles.userdes}>
-<h1>End User Application</h1>
+<h1>Medoc +</h1>
 
 
   <h3> Nursing Module</h3>
@@ -411,7 +411,7 @@ Facilitate smooth scheduling of patient appointments, optimizing clinic workflow
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={17}  style={{backgroundColor:"red",zIndex:"1"}}>
+            <ParallaxLayer offset={17}  style={{backgroundColor:"#EEEEEE",height:"100vh",zIndex:"1"}}>
 <div className={styles.contactus}>
   <h1>Looking for Support?</h1>
   <p>Got a Question? We'd love to hear from you. Send us a message and we will respond you as soon as possible</p>
@@ -435,7 +435,7 @@ Facilitate smooth scheduling of patient appointments, optimizing clinic workflow
 </div>
 
             </ParallaxLayer>
-            <ParallaxLayer offset={18}>
+            <ParallaxLayer offset={18} style={{backgroundColor:"#EEEEEE"}}>
             <div className={styles.footer}>
 
             <div className={styles.footerflex}>
