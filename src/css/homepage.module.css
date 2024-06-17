@@ -5,13 +5,13 @@
 }
 
 .navbarWhite {
-    background-color: white;
-    padding-left: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    transition: 1s ease-in;
-    width: 100%;
-    height: 45px;
+  background-color: white;
+ padding-left: 2%;
+ padding-top: 1%;
+ padding-bottom: 1%;
+  transition: 1s ease-in;
+  width: 100%;
+  height: 70px;
 }
 
 .navright {
@@ -296,6 +296,41 @@
     background-blend-mode: multiply;
     /* z-index: -1; */
 }
+.faq{
+  height: 100vh;
+  width: 100%;
+  margin-top: -5%;
+  padding-top: 3%;
+  background-color: white;
+  text-align: center;
+}
+.faq h1{
+  font-size:63px;
+}
+.faq p{
+  font-size: 18px;
+}
+.faqcont{
+  display: flex;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  justify-content: space-between;
+}
+.faqcontdes{
+  width: 45%;
+  text-align: justify;
+}
+.faqcontdes h4{
+  padding-top: 2%;
+  /* padding-bottom: 2%; */
+  font-size: 23px;
+  font-weight: 500;
+}
+.faqcontdes h6{
+  font-weight: 300;
+  font-size: 13px;
+}
 
 .bt {
     padding: 15%;
@@ -343,7 +378,9 @@
     background-color: #EEEEEE;
     padding-top: 7%;
     text-align: center;
-    color: #325a6c;
+    padding-top: 3%;
+    font-family: 'Poppins';
+    box-shadow: 5px 5px 5px 5px grey;
 }
 
 .contactus h1 {
