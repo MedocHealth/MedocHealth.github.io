@@ -452,7 +452,7 @@ function HomePage() {
               <p>The complete healthcare ecosystem building towards better accessibility to healthcare and supporting you with medical finances and family medicine.</p>
             </div>
             <div className={styles.footerconts}>
-              <h1>Usefull Links</h1>
+              <h1>Useful Links</h1>
               <Link className={styles.footeritems}>How it Works?</Link>
               <Link to='/privacypolicy' className={styles.footeritems}>Privacy Policy</Link>
               <Link to='/termsofuse' className={styles.footeritems}>Terms of Use</Link>
@@ -461,8 +461,6 @@ function HomePage() {
             <div className={styles.footerconts}>
               <h1>Support</h1>
               <Link to='/faq' className={styles.footeritems}>FAQs</Link>
-              <Link className={styles.footeritems}>Editor Help</Link>
-              <Link className={styles.footeritems}>Live Chatting</Link>
               <Link className={styles.footeritems}>Contact Us</Link>
             </div>
             <div className={styles.footercontm}>
@@ -472,7 +470,7 @@ function HomePage() {
           <div style={{ position: 'relative', height: 'full', marginBottom: '50px' }}>
             <div style={{ padding: 0, position: 'absolute', bottom: 0, width: '100%' }}>
               <p style={{ textAlign: 'center', fontSize: '18px' }}>
-                &copy; {new Date().getFullYear()} Medoc, ALL rights reserved
+                &copy; {new Date().getFullYear()} Medoc Health IT Pvt. Ltd, All rights reserved
               </p>
             </div>
           </div>
