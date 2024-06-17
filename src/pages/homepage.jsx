@@ -421,23 +421,25 @@ function HomePage() {
         <div className={styles.contactus}>
           <h1>Looking for Support?</h1>
           <p>Got a Question? We'd love to hear from you. Send us a message and we will respond you as soon as possible</p>
+          <form action="https://formspree.io/f/mjvnnlnq" method="POST" className={styles.contactform}>
           <div className={styles.contactform}>
             <div className={styles.formrow1}>
-              <input type="text" placeholder="Your Name*"></input>
-              <input type="text" placeholder="Your Email*"></input>
+              <input type="text" name='name' placeholder="Your Name*"></input>
+              <input type="text" name='email' placeholder="Your Email*"></input>
             </div>
             <div className={styles.formrow2}>
 
-              <input placeholder="This question is about"></input>
+              <input name="Subject" placeholder="This question is about"></input>
             </div>
             <div className={styles.formrow3}>
 
-              <input placeholder="Your message..." type="text"></input>
+              <input name="message" placeholder="Your message..." type="text"></input>
             </div>
-            <div className={styles.formbutton}>Send your message</div>
+            <button type="submit" className={styles.formbutton}>Send your message</button>
 
 
           </div>
+          </form>
         </div>
 
       </ParallaxLayer>
