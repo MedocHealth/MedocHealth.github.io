@@ -250,17 +250,17 @@ function HomePage() {
       <ParallaxLayer style={{ ...pLayer }} offset={10} sticky={{ start: 10, end: 14 }} >
         <div className={styles.userappdescription}>
           <div className={styles.userdes}>
-            <h1>Medoc +</h1>
+            <h1>ME End User Application</h1>
 
 
-            <h3> Nursing Module</h3>
-            <p>Efficiently manage tasks and patient data with customizable settings for a smooth workflow.</p>
+            <h3>Complete Medical Companion</h3>
+            <p>Safely store and access your entire family's medical records in one secure app.</p>
 
-            <h3> Pharma Module</h3>
-            <p>Manage medication orders, track inventory, and process payments seamlessly.</p>
+            <h3>Presciptions Availability & Financial Organizer"</h3>
+            <p> Securely store medical histories, track spending, get reminders for medications, and effortlessly manage appointments.</p>
 
-            <h3> Paramedics Module</h3>
-            <p>Locate nearby medical facilities, connect with paramedics for swift crisis response.</p>
+            <h3>Women's Health</h3>
+            <p>Track your entire health progress and dates.</p>
 
           </div>
 
@@ -456,7 +456,7 @@ function HomePage() {
               <Link className={styles.footeritems}>How it Works?</Link>
               <Link to='/privacypolicy' className={styles.footeritems}>Privacy Policy</Link>
               <Link to='/termsofuse' className={styles.footeritems}>Terms of Use</Link>
-              <Link to='/refundpolicy' className={styles.footeritems}>refund policy</Link>
+              <Link to='/refundpolicy' className={styles.footeritems}>Refund policy</Link>
             </div>
             <div className={styles.footerconts}>
               <h1>Support</h1>
