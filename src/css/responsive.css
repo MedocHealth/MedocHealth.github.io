@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+    /* Styles for tablets and mobile devices */
+    .navright {
+      display: none;
+    }
+  
+    .img1 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .features {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .featureimage img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .userappdescription {
+      flex-direction: column;
+    }
+  
+    .userdes {
+      width: 100%;
+    }
+  
+    .userappdescription img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .highlightContainer {
+      flex-direction: column;
+    }
+  
+    .highlightBox {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .bt {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .faqcont {
+      flex-direction: column;
+    }
+  
+    .faqcontdes {
+      width: 100%;
+    }
+  
+    .contactform {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .formrow1, .formrow2, .formrow3 {
+      flex-direction: column;
+    }
+  
+    .footerflex {
+      flex-direction: column;
+    }
+  
+    .footercontb, .footerconts, .footercontm {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Additional styles for mobile phones */
+    .card h1, .features h1 {
+      font-size: 24px;
+    }
+  
+    .card p, .features p {
+      font-size: 14px;
+    }
+  }
