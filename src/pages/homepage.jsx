@@ -121,10 +121,12 @@ function HomePage() {
 
                 <Link
                   className={styles.navbuttonWhite}
-                  onClick={() => parallaxRef.current.scrollTo(18)}
+                  // onClick={() => parallaxRef.current.scrollTo(18)}
+                  to="/blog"
                 >
                   Blog
                 </Link>
+
                 <Link
                   className={styles.navbuttonWhite}
                   onClick={() => parallaxRef.current.scrollTo(19)}
@@ -575,9 +577,15 @@ function HomePage() {
         </ParallaxLayer>
 
         {/* BLOG SECTION NEEDS TO BE INTEGRATED */}
+<<<<<<< HEAD
         {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
           <Blog />
         </ParallaxLayer> */}
+=======
+        <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
+          {/* <Blog /> */}
+        </ParallaxLayer>
+>>>>>>> c092b1349a1547fe74fe72a738ffc9209bb5bd87
 
         <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.contactus}>

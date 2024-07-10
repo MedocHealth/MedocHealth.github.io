@@ -7,7 +7,6 @@ import FAQ from './pages/FAQ'
 import Refundpolicy from './pages/Refundpolicy'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Termsofuse from './pages/Termsofuse'
-import BBlog from './pages/BBlog';
 const router=createBrowserRouter(
   [
   {
@@ -29,17 +28,12 @@ element:<PrivacyPolicy></PrivacyPolicy>
 {
   path:'/termsofuse',
 element:<Termsofuse></Termsofuse>
-},
-{
-  path:'/blog',
-  element:<BBlog></BBlog>
 }
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ParallaxProvider>
-
-<RouterProvider router={router}></RouterProvider>
+    <RouterProvider router={router}></RouterProvider>
   </ParallaxProvider>
 );
