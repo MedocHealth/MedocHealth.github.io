@@ -575,9 +575,9 @@ function HomePage() {
         </ParallaxLayer>
 
         {/* BLOG SECTION NEEDS TO BE INTEGRATED */}
-        <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
+        {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
           <Blog />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
 
         <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.contactus}>
