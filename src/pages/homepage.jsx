@@ -122,7 +122,7 @@ function HomePage() {
                 <Link
                   className={styles.navbuttonWhite}
                   // onClick={() => parallaxRef.current.scrollTo(18)}
-                  to="/BBlog"
+                  to="/blog"
                 >
                   Blog
                 </Link>
