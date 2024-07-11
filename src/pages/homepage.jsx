@@ -24,7 +24,7 @@ import hi2 from "../resources/A Complete Solution.png";
 import bt from "../resources/image-05-removebg-preview.png";
 import playbutton from "../resources/googleplay-grey.png";
 import fPlayButton from "../resources/googleplay-black.png";
-import { Drawer } from "@mui/material";
+import { Drawer, Hidden } from "@mui/material";
 import { drawerList } from "./drawerlist";
 import medoclogoblack from "../resources/medoc-black.png";
 import { Link } from "react-router-dom";
@@ -500,7 +500,10 @@ function HomePage() {
         </ParallaxLayer>
         <ParallaxLayer
           offset={17}
-          style={{ backgroundColor: "white", zIndex: "1" }}
+          style={{
+            backgroundColor: "white",
+            zIndex: "0",
+          }}
         >
           <div className={styles.faq}>
             <h1>Doubts?</h1>
@@ -578,15 +581,22 @@ function HomePage() {
 
         {/* BLOG SECTION NEEDS TO BE INTEGRATED */}
         {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
+<<<<<<< HEAD
+=======
           <Blog />
         </ParallaxLayer> */}
 
         <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
+>>>>>>> c96551782fa72ed1ba74cae254737ae0a150657b
           {/* <Blog /> */}
-        </ParallaxLayer>
+        {/* </ParallaxLayer> */}
 
+<<<<<<< HEAD
+        <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
+=======
 
         <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
+>>>>>>> c96551782fa72ed1ba74cae254737ae0a150657b
           <div className={styles.contactus}>
             <h1>Looking for Support?</h1>
             <p>
@@ -603,11 +613,13 @@ function HomePage() {
                   <input
                     type="text"
                     name="name"
+                    required
                     placeholder="Your Name*"
                   ></input>
                   <input
                     type="text"
                     name="email"
+                    required
                     placeholder="Your Email*"
                   ></input>
                 </div>
@@ -618,11 +630,11 @@ function HomePage() {
                   ></input>
                 </div>
                 <div className={styles.formrow3}>
-                  <input
+                  <textarea
                     name="message"
+                    id="message"
                     placeholder="Your message..."
-                    type="text"
-                  ></input>
+                  ></textarea>
                 </div>
                 <button type="submit" className={styles.formbutton}>
                   Send your message
