@@ -581,10 +581,11 @@ function HomePage() {
 
         {/* BLOG SECTION NEEDS TO BE INTEGRATED */}
         {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
-          {/* <Blog /> */}
-        {/* </ParallaxLayer> */}
 
-        <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
+          <Blog />
+        </ParallaxLayer> */}
+
+        <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.contactus}>
             <h1>Looking for Support?</h1>
             <p>
@@ -631,7 +632,7 @@ function HomePage() {
             </form>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
+        <ParallaxLayer offset={20} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.footer}>
             <div className={styles.footerflex}>
               <div className={styles.footercontb}>

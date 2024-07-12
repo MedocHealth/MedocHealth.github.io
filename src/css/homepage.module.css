@@ -3,28 +3,23 @@
   padding: 0;
   margin: 0;
 }
-
+/* change */
 .navbarWhite {
   background-color: white;
-  padding-left: 2%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 1% 14%;
   transition: 1s ease-in;
   width: 100%;
-  height: 40px;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navright {
   display: flex;
   align-items: center;
-  /* padding-left: 50%; */
   font-family: "Poppins";
-  width: 50%;
   transition: 0.25s ease-in;
-}
-
-.navrighthidden {
-  display: none;
 }
 
 .navbuttonWhite {
@@ -32,10 +27,7 @@
   color: black;
   font-size: 0.9rem;
   font-weight: 600;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 1% 4%;
   border: none;
   cursor: pointer;
   transition: 0.25s ease-in;
@@ -46,6 +38,72 @@
 .navbuttonWhite:hover {
   background-color: #eeeeee;
 }
+
+@media screen and (max-width: 768px) {
+  .navbarWhite {
+    justify-content: center;
+  }
+  
+  .navright {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbuttonWhite {
+    padding: 2% 3%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbuttonWhite {
+    padding: 3% 2%;
+    font-size: 0.7rem;
+  }
+}
+/*  */
+/* .navbarWhite {
+  background-color: white;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  transition: 1s ease-in;
+  width: 100%;
+  height: 40px;
+} */
+
+/* .navright {
+  display: flex;
+  align-items: center;
+  /* padding-left: 50%; */
+  /* font-family: "Poppins"; */
+  /* width: 50%; */
+  /* transition: 0.25s ease-in; */
+/* }  */
+
+.navrighthidden {
+  display: none;
+}
+
+/* .navbuttonWhite {
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: %;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease-in;
+  display: flex;
+  text-decoration: none;
+} */
+
+/* .navbuttonWhite:hover {
+  background-color: #eeeeee;
+} */
 
 .distbutton {
   margin-left: 20px;
