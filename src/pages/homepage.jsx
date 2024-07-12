@@ -122,7 +122,7 @@ function HomePage() {
                 <Link
                   className={styles.navbuttonWhite}
                   // onClick={() => parallaxRef.current.scrollTo(18)}
-                  to="/blog"
+                  to="https://blog.medochealth.in/"
                 >
                   Blog
                 </Link>
@@ -593,7 +593,7 @@ function HomePage() {
         {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}> */}
 
 
-        <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
+        <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
 
           <div className={styles.contactus}>
             <h1>Looking for Support?</h1>
@@ -641,7 +641,7 @@ function HomePage() {
             </form>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={20} style={{ backgroundColor: "#EEEEEE" }}>
+        <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.footer}>
             <div className={styles.footerflex}>
               <div className={styles.footercontb}>
