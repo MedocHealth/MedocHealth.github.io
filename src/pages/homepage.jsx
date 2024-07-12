@@ -632,7 +632,7 @@ function HomePage() {
             </form>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
+        <ParallaxLayer offset={20} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.footer}>
             <div className={styles.footerflex}>
               <div className={styles.footercontb}>
