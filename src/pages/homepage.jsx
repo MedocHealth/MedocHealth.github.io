@@ -122,7 +122,7 @@ function HomePage() {
                 <Link
                   className={styles.navbuttonWhite}
                   // onClick={() => parallaxRef.current.scrollTo(18)}
-                  to="/blog"
+                  to="https://blog.medochealth.in/"
                 >
                   Blog
                 </Link>
