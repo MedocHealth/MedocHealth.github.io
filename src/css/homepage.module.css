@@ -4,6 +4,15 @@
   margin: 0;
 }
 /* change */
+/* for medoc img in navbar */
+.logo{
+  height: 40px;
+  width: auto;
+}
+.navleft{
+  display: flex;
+  align-items: center;
+}
 .navbarWhite {
   background-color: white;
   padding: 1% 14%;
@@ -20,6 +29,8 @@
   align-items: center;
   font-family: "Poppins";
   transition: 0.25s ease-in;
+  /* for contact-us */
+  white-space: nowrap;
 }
 
 .navbuttonWhite {
