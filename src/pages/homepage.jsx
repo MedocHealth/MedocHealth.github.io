@@ -20,7 +20,8 @@ import f7 from "../resources/feature7.png";
 import f8 from "../resources/feature8.png";
 import hi1 from "../resources/Available on all devices.png";
 import hi2 from "../resources/A Complete Solution.png";
-
+// logo
+import logo from "../resources/logo-medoc.png"
 import bt from "../resources/image-05-removebg-preview.png";
 import playbutton from "../resources/googleplay-grey.png";
 import fPlayButton from "../resources/googleplay-black.png";
@@ -92,6 +93,9 @@ function HomePage() {
         >
           {scrolled === false ? (
             <nav className={styles.navbarWhite} onMouseLeave={handleSidebar}>
+            <div className={styles.navleft}>
+              <img src={logo} alt="logo" className={styles.logo}/>
+            </div>
               <div className={styles.navright}>
                 <Link
                   className={styles.navbuttonWhite}
