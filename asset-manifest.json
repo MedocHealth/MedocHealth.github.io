@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d67c0c1c.css",
-    "main.js": "/static/js/main.2917ac3b.js",
+    "main.css": "/static/css/main.d827da57.css",
+    "main.js": "/static/js/main.ac35fde6.js",
     "static/media/Patient_Management.png": "/static/media/Patient_Management.1950da398f73b42d7d51.png",
     "static/media/medoccard.png": "/static/media/medoccard.857f5725dc8f56cadab8.png",
+    "static/media/image.png": "/static/media/image.c0bb3104becc65023dfa.png",
     "static/media/Hospital Corridor Photos and Images _ Shutterstock.png": "/static/media/Hospital Corridor Photos and Images _ Shutterstock.3eac93028b211417956d.png",
     "static/media/medoc+pharmaphoto.png": "/static/media/medoc+pharmaphoto.3609545bd4402ec36ffd.png",
     "static/media/userapp1.png": "/static/media/userapp1.efb576228f15740d7f33.png",
@@ -24,11 +25,11 @@
     "static/media/A Complete Solution.png": "/static/media/A Complete Solution.bc672bf7ae6bd4a6f2c5.png",
     "static/media/Available on all devices.png": "/static/media/Available on all devices.c52fc9d9fb8c67fb7736.png",
     "index.html": "/index.html",
-    "main.d67c0c1c.css.map": "/static/css/main.d67c0c1c.css.map",
-    "main.2917ac3b.js.map": "/static/js/main.2917ac3b.js.map"
+    "main.d827da57.css.map": "/static/css/main.d827da57.css.map",
+    "main.ac35fde6.js.map": "/static/js/main.ac35fde6.js.map"
   },
   "entrypoints": [
-    "static/css/main.d67c0c1c.css",
-    "static/js/main.2917ac3b.js"
+    "static/css/main.d827da57.css",
+    "static/js/main.ac35fde6.js"
   ]
 }
