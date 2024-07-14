@@ -93,9 +93,9 @@ function HomePage() {
         >
           {scrolled === false ? (
             <nav className={styles.navbarWhite} onMouseLeave={handleSidebar}>
-            <div className={styles.navleft}>
-              <img src={logo} alt="logo" className={styles.logo}/>
-            </div>
+              <div className={styles.navleft}>
+                <img src={logo} alt="logo" className={styles.logo} />
+              </div>
               <div className={styles.navright}>
                 <Link
                   className={styles.navbuttonWhite}
