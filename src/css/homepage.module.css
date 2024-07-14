@@ -5,22 +5,26 @@
 }
 /* change */
 /* for medoc img in navbar */
-.logo{
+.logo {
   height: 40px;
   width: auto;
 }
-.navleft{
+.navleft {
   display: flex;
   align-items: center;
 }
 .navbarWhite {
+  display: flex;
   background-color: white;
-  padding: 1% 14%;
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 20%;
   transition: 1s ease-in;
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -54,12 +58,12 @@
   .navbarWhite {
     justify-content: center;
   }
-  
+
   .navright {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .navbuttonWhite {
     padding: 2% 3%;
     font-size: 0.8rem;
@@ -87,9 +91,9 @@
   display: flex;
   align-items: center;
   /* padding-left: 50%; */
-  /* font-family: "Poppins"; */
-  /* width: 50%; */
-  /* transition: 0.25s ease-in; */
+/* font-family: "Poppins"; */
+/* width: 50%; */
+/* transition: 0.25s ease-in; */
 /* }  */
 
 .navrighthidden {
@@ -479,10 +483,20 @@
 }
 
 .contactform {
-  /* padding-left: 10%;
+  padding-left: 10%;
   padding-right: 10%;
   padding-top: 1%;
-  padding-bottom: 1%; */
+  padding-bottom: 1%;
+}
+
+@media screen and (max-width: 720px) {
+  .contactform {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .contactus h1 {
+    font-size: 35px;
+  }
 }
 
 .contactform input {
@@ -540,7 +554,7 @@
 }
 
 .formbutton {
-  margin-left: 70%;
+  /* margin-left: 70%; */
   text-align: center;
   color: white;
   display: flex;
@@ -550,6 +564,12 @@
   border-radius: 8px;
   background-color: teal;
   width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .formbutton {
+    width: 50%;
+  }
 }
 
 .footer {
@@ -569,11 +589,12 @@ Link :hover {
 
 .footerflex {
   display: flex;
+
   font-family: "poppins";
   height: 50vh;
-  padding-left: 10%;
-  padding-right: 10%;
-  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* justify-content: space-between; */
 }
 
 .footercontb {
@@ -591,6 +612,14 @@ Link :hover {
   padding-bottom: 1%;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+.footerSup {
+  width: 40%;
+  padding-top: 2.25%;
+}
+.footerconts {
+  width: 50%;
 }
 
 .footerconts h1 {
@@ -624,7 +653,21 @@ Link :hover {
   margin: auto;
 }
 
+@media screen and (min-width: 1000px) {
+  .footerSup {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+  }
+  .footerconts {
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .footercontb {
+    overflow-y: scroll;
+  }
   .faqcont {
     flex-direction: column;
     width: 100%;
