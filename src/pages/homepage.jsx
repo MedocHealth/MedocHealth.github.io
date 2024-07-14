@@ -21,7 +21,7 @@ import f8 from "../resources/feature8.png";
 import hi1 from "../resources/Available on all devices.png";
 import hi2 from "../resources/A Complete Solution.png";
 // logo
-import logo from "../resources/medoc-black.png"
+import logo from "../resources/medoc-black.png";
 import bt from "../resources/image-05-removebg-preview.png";
 import playbutton from "../resources/googleplay-grey.png";
 import fPlayButton from "../resources/googleplay-black.png";
@@ -85,7 +85,7 @@ function HomePage() {
 
   return (
     <div className={styles.herobackground}>
-      <Parallax ref={parallaxRef} pages={19.6}>
+      <Parallax ref={parallaxRef} pages={20}>
         <ParallaxLayer
           offset={0}
           sticky={{ start: 0, end: 18 }}
@@ -93,9 +93,9 @@ function HomePage() {
         >
           {scrolled === false ? (
             <nav className={styles.navbarWhite} onMouseLeave={handleSidebar}>
-            <div className={styles.navleft}>
-              <img src={logo} alt="logo" className={styles.logo}/>
-            </div>
+              <div className={styles.navleft}>
+                <img src={logo} alt="logo" className={styles.logo} />
+              </div>
               <div className={styles.navright}>
                 <Link
                   className={styles.navbuttonWhite}
@@ -645,7 +645,7 @@ function HomePage() {
                   className={styles.footermedoc}
                   alt="/"
                 ></img>
-                <p>
+                <p className={styles.footerAbout}>
                   The complete healthcare ecosystem building towards better
                   accessibility to healthcare and supporting you with medical
                   finances and family medicine.
@@ -664,19 +664,27 @@ function HomePage() {
                   Refund policy
                 </Link>
               </div>
-              <div className={styles.footerconts}>
-                <h1>Support</h1>
-                <Link to="/faq" className={styles.footeritems}>
-                  FAQs
-                </Link>
-                <Link className={styles.footeritems}>Contact Us</Link>
-              </div>
-              <div className={styles.footercontm}>
-                <img
-                  src={fPlayButton}
-                  className={styles.footerplaybutton}
-                  alt=""
-                />
+              <div className={styles.footerSup}>
+                <div
+                  className={styles.footerconts}
+                  style={{ width: "100%", height: "30%" }}
+                >
+                  <h1>Support</h1>
+                  <Link to="/faq" className={styles.footeritems}>
+                    FAQs
+                  </Link>
+                  <Link className={styles.footeritems}>Contact Us</Link>
+                </div>
+                <div
+                  className={styles.footercontm}
+                  style={{ width: "100%", height: "40%" }}
+                >
+                  <img
+                    src={fPlayButton}
+                    className={styles.footerplaybutton}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div
@@ -689,12 +697,18 @@ function HomePage() {
               <div
                 style={{
                   padding: 0,
-                  position: "absolute",
+                  // position: "absolute",
                   bottom: 0,
                   width: "100%",
                 }}
               >
-                <p style={{ textAlign: "center", fontSize: "18px" }}>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontSize: "18px",
+                    padding: "2%",
+                  }}
+                >
                   &copy; {new Date().getFullYear()} Medoc Health IT Pvt. Ltd,
                   All rights reserved
                 </p>
