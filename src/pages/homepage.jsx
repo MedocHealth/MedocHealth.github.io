@@ -21,7 +21,7 @@ import f8 from "../resources/feature8.png";
 import hi1 from "../resources/Available on all devices.png";
 import hi2 from "../resources/A Complete Solution.png";
 // logo
-import logo from "../resources/logo-medoc.png"
+import logo from "../resources/medoc-black.png"
 import bt from "../resources/image-05-removebg-preview.png";
 import playbutton from "../resources/googleplay-grey.png";
 import fPlayButton from "../resources/googleplay-black.png";
