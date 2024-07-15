@@ -1,0 +1,49 @@
+.me-policy {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .content-paper {
+    padding: 2rem;
+  }
+  
+  .main-title {
+    color: #00796b;
+    margin-bottom: 1rem;
+  }
+  
+  .last-updated {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    color: #00796b;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .policy-text {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .MuiList-root {
+    margin-bottom: 1.5rem;
+  }
+  
+  .MuiListItem-root {
+    padding-left: 0;
+  }
+  
+  .MuiListItemText-root {
+    margin-bottom: 0.5rem;
+  }
+  
+  .MuiListItemText-primary {
+    font-weight: bold;
+  }
+  
+  .MuiListItemText-secondary {
+    color: #555;
+  }
