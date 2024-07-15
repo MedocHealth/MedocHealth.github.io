@@ -7,7 +7,7 @@ import FAQ from './pages/FAQ'
 import Refundpolicy from './pages/Refundpolicy'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Termsofuse from './pages/Termsofuse'
-
+import MePolicy from './pages/MePolicy';
 const router = createBrowserRouter([{
   path: '/',
   element: < HomePage />
@@ -27,12 +27,11 @@ const router = createBrowserRouter([{
 {
   path: '/termsofuse',
   element: < Termsofuse />
+},
+{
+  path: '/mePolicy',
+  element: < MePolicy />
 }
-
-// {
-//   path: '/blog',
-//   element: < BBlog />
-// }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
