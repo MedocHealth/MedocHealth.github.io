@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider, createHashRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter, createBrowserRouter } from 'react-router-dom';
 import HomePage from './pages/homepage';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import FAQ from './pages/FAQ'
 import Refundpolicy from './pages/Refundpolicy'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Termsofuse from './pages/Termsofuse'
-import BBlog from './pages/BBlog';
 
-const router = createHashRouter([{
+const router = createBrowserRouter([{
   path: '/',
   element: < HomePage />
 },
@@ -28,11 +27,12 @@ const router = createHashRouter([{
 {
   path: '/termsofuse',
   element: < Termsofuse />
-},
-{
-  path: '/blog',
-  element: < BBlog />
 }
+
+// {
+//   path: '/blog',
+//   element: < BBlog />
+// }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
