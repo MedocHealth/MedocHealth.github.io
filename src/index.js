@@ -8,7 +8,7 @@ import Refundpolicy from './pages/Refundpolicy'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Termsofuse from './pages/Termsofuse'
 import MePolicy from './pages/MePolicy';
-const router = createBrowserRouter([{
+const router = createHashRouter([{
   path: '/',
   element: < HomePage />
 },
