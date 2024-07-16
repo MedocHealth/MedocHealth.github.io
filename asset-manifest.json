@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.78fc8a4a.css",
-    "main.js": "/static/js/main.47f1c3c0.js",
+    "main.css": "/static/css/main.98a52a60.css",
+    "main.js": "/static/js/main.32d728e6.js",
     "static/media/Patient_Management.png": "/static/media/Patient_Management.1950da398f73b42d7d51.png",
     "static/media/medoccard.png": "/static/media/medoccard.857f5725dc8f56cadab8.png",
     "static/media/image.png": "/static/media/image.c0bb3104becc65023dfa.png",
@@ -25,11 +25,11 @@
     "static/media/A Complete Solution.png": "/static/media/A Complete Solution.bc672bf7ae6bd4a6f2c5.png",
     "static/media/Available on all devices.png": "/static/media/Available on all devices.c52fc9d9fb8c67fb7736.png",
     "index.html": "/index.html",
-    "main.78fc8a4a.css.map": "/static/css/main.78fc8a4a.css.map",
-    "main.47f1c3c0.js.map": "/static/js/main.47f1c3c0.js.map"
+    "main.98a52a60.css.map": "/static/css/main.98a52a60.css.map",
+    "main.32d728e6.js.map": "/static/js/main.32d728e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.78fc8a4a.css",
-    "static/js/main.47f1c3c0.js"
+    "static/css/main.98a52a60.css",
+    "static/js/main.32d728e6.js"
   ]
 }
