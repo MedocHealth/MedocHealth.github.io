@@ -33,10 +33,6 @@ const router = createHashRouter([{
   path: '/mePolicy',
   element: < MePolicy />
 },
-{
-  path: '/termsofuse',
-  element: <Termsofuse />
-}
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
