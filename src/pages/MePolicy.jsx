@@ -6,14 +6,17 @@ function MePolicy() {
     return (
         <Container maxWidth="lg" className="me-policy">
             <Paper elevation={3} className="content-paper">
-            <Box className="header">
-          <img src={logo} width="173" height="40" alt="footer-logo" className="logo" />
-          <Typography variant="h4" component="h1" className="main-title">
+                <Box className="header">
+                    <img src={logo} width="173" height="40" alt="footer-logo" className="logo" />
+                    <Typography variant="body1" className="tagline">
+                        The complete healthcare ecosystem building towards better accessibility
+                        to healthcare and supporting you with medical finances and family medicine.
+                    </Typography>
+                </Box>
+
+                <Typography variant="h4" component="h1" className="main-title">
                     ME App Privacy Policy
                 </Typography>
-        </Box>
-              
-
                 <Typography variant="h5" component="h2" className="section-title">
                     Introduction
                 </Typography>
@@ -234,7 +237,7 @@ function MePolicy() {
                     </List>
                 </List>
 
-        
+
 
                 <Typography variant="h5" component="h2" className="section-title">
                     Social Media Integration and Data Handling
