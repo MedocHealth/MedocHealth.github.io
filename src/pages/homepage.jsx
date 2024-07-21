@@ -645,11 +645,14 @@ function HomePage() {
                   className={styles.footermedoc}
                   alt="/"
                 ></img>
-                <p className={styles.footerAbout}>
-                  The complete healthcare ecosystem building towards better
-                  accessibility to healthcare and supporting you with medical
-                  finances and family medicine.
-                </p>
+
+                <div className={styles.footerAbout}>
+                  <p>
+                    The complete healthcare ecosystem building towards better
+                    accessibility to healthcare and supporting you with medical
+                    finances and family medicine.
+                  </p>
+                </div>
               </div>
               <div className={styles.footerconts}>
                 <h1>Useful Links</h1>

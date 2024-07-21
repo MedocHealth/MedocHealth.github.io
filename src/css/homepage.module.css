@@ -20,7 +20,7 @@
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 20%;
-  transition: 1s ease-in;
+  /* transition: 1s ease-in; */
   width: 100%;
   height: auto;
   display: flex;
@@ -41,7 +41,7 @@
   background-color: white;
   color: black;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1% 4%;
   border: none;
   cursor: pointer;
@@ -51,7 +51,8 @@
 }
 
 .navbuttonWhite:hover {
-  background-color: #eeeeee;
+  color: #41c1ba;
+  scale: 1.2;
 }
 
 @media screen and (max-width: 768px) {
@@ -394,7 +395,7 @@
   padding-right: 8%;
   padding-top: 3%;
   padding-bottom: 6%;
-  overflow: scroll;
+  overflow-y: scroll;
   justify-content: space-between;
 }
 
@@ -483,13 +484,13 @@
 }
 
 .contactform {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 1%;
   padding-bottom: 1%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
   .contactform {
     padding-left: 0%;
     padding-right: 0%;
@@ -664,9 +665,13 @@ Link :hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .footercontb {
+    overflow-y: visible;
+  }
+  .footercontb p {
     overflow-y: scroll;
+    max-height: 30vh; /* Adjust as needed */
   }
   .faqcont {
     flex-direction: column;
