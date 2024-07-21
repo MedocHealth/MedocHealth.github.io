@@ -666,6 +666,14 @@ function HomePage() {
                 <Link to="/refundpolicy" className={styles.footeritems}>
                   Refund policy
                 </Link>
+                <Link
+                  to="https://career.medochealth.in/
+
+"
+                  className={styles.footeritems}
+                >
+                  Career
+                </Link>
               </div>
               <div className={styles.footerSup}>
                 <div
