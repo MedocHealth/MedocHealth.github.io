@@ -584,8 +584,9 @@
   color: black;
 }
 
-Link :hover {
-  color: teal;
+.footeritems:hover {
+  color: #41c1ba;
+  scale: 1.02;
 }
 
 .footerflex {
