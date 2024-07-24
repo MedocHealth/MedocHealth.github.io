@@ -564,7 +564,13 @@
   height: 7vh;
   border-radius: 8px;
   background-color: teal;
-  width: 30%;
+  width: 40%;
+}
+
+@media screen and (max-width: 420px) {
+  .formrow3 textarea {
+    height: 17vh;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -653,6 +659,7 @@
   width: 80%;
   border-radius: 8px;
   margin: auto;
+  padding-top: 2%;
 }
 
 @media screen and (min-width: 1000px) {
