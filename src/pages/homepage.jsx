@@ -686,8 +686,8 @@ function HomePage() {
                     FAQs
                   </Link>
                   <Link className={styles.footeritems}>Contact Us</Link>
-                  
-                  <Link to="/mePolicy" className={styles.footeritems}>Me</Link>
+
+                  <Link to="/mePolicy" className={styles.footeritems}>Me Privacy Policy</Link>
                 </div>
                 <div
                   className={styles.footercontm}
