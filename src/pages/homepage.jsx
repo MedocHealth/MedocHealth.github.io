@@ -31,6 +31,7 @@ import medoclogoblack from "../resources/medoc-black.png";
 import { Link } from "react-router-dom";
 
 function HomePage() {
+  
   const caroData = [f1, f2, f3, f4, f5, f6, f7, f8];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const alignCenter = {
@@ -685,6 +686,8 @@ function HomePage() {
                     FAQs
                   </Link>
                   <Link className={styles.footeritems}>Contact Us</Link>
+                  
+                  <Link to="/mePolicy" className={styles.footeritems}>Me</Link>
                 </div>
                 <div
                   className={styles.footercontm}
