@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    environment {
+        WEB_INSTANCE_IP = '13.200.42.64'  // Replace with your actual web instance IP
+    }
+    stages {
+        stage('Execute Script on Web Instance') {
+            steps {
+                sshagent (credentials: ['web-instance-ssh-key-id']) {
+                    sh '''
+                        ssh -o StrictHostKeyChecking=no ubuntu@${WEB_INSTANCE_IP} '
+                        sudo bash medoc.sh
+                        '
+                    '''
+                }
+            }
+        }
+    }
+}
