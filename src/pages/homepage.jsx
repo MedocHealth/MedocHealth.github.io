@@ -650,6 +650,7 @@ function HomePage() {
       destination for affordable medical finances and trusted family
       medicine. Join now to make healthcare accessible and stress-free
       for everyone.
+    Simplify healthcare with Medoc—affordable finances and trusted family medicine.
     </p>
     <div className={styles.contactform}>
       <div className={styles.formrow1}>
@@ -681,6 +682,7 @@ function HomePage() {
             <option value="+82">+82 South Korea</option>
           </select>
           <input type="text" placeholder="Phone Number"></input>
+          <input type="text" placeholder="Phone No."></input>
         </div>
         <div>
           <select name="Country" id="country-select">
@@ -746,9 +748,7 @@ function HomePage() {
                   Refund policy
                 </Link>
                 <Link
-                  to="https://career.medochealth.in/
-
-"
+                  to="https://career.medochealth.in/"
                   className={styles.footeritems}
                 >
                   Career

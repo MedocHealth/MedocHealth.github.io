@@ -459,38 +459,62 @@
 
 .contactus {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: "poppins";
-  height: 100vh;
-  padding-left: 15%;
-  padding-right: 15%;
-  background-color: #eeeeee;
-  padding-top: 7%;
-  text-align: center;
-  padding-top: 3%;
   font-family: "Poppins";
+  height: auto; 
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #eeeeee;
+  padding-top: 3%;
+  text-align: center;
   box-shadow: 5px 5px 5px 5px grey;
   align-items: center;
 }
 
 .contactus h1 {
-    font-size: 55px;
-    margin-top: 5vh;
-}
-
-.contactus p {
-    color: teal;
-    font-size: 18px;
   font-size: 55px;
   display: flex;
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .contactus {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .contactus h1 {
+    font-size: 2rem; /* Smaller font size for tablets */
+  }
+
+  .contactus p {
+    font-size: 0.7rem; /* Slightly smaller font size for tablets */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .contactus {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .contactus h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile devices */
+  }
+
+  .contactus p {
+    font-size: 0.5rem; /* Smaller font size for mobile devices */
+  }
+}
+
+
 .contactus p {
   color: teal;
-  font-size: 20px;
+  font-size: 1rem;
   border-radius: 50px;
 }
 
@@ -507,37 +531,33 @@
     padding-right: 0%;
   }
   .contactus h1 {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
 }
 
 .contactform input {
   border: solid 1px teal;
-  /* box-shadow: 1px 1px 1px ; */
 }
 .contactform textarea {
   border: solid 1px teal;
-  /* box-shadow: 1px 1px 1px ; */
 }
 
 .formrow1 {
-    width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    display: flex;
-    justify-content: space-between;
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.formrow1 input {
-  width: 43%;
-  height: 7vh;
-  padding-left: 3%;
-  padding-right: 3%;
+.formrow1 input, .formrow2 input, .formrow1 div, .formrow2 div {
+  width: 48%;
+  height: 5vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 2%;
+  box-sizing: border-box; 
   border-radius: 8px;
 }
 .formrow1 div{
@@ -580,14 +600,41 @@
   display: flex;
   padding-top: 2%;
   padding-bottom: 2%;
+
+.formrow1 div, .formrow2 div {
+  border: 1.5px solid teal;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0% 3%;
+  box-sizing: border-box;
 }
 
-.formrow2 input {
-  height: 7vh;
+.formrow1 div select, .formrow2 div select {
+  width: 100%; 
+  height: 100%; 
+  font-size: 16px; 
+  border: none; 
+  background-color: transparent; 
+  outline: none; 
+}
+
+.formrow1 div select option, .formrow2 div select option {
+  font-size: 14px;
+}
+
+.formrow2 div input {
+  width: 100%; 
+  height: 70%; 
   padding-left: 2%;
-  padding-right: 2%;
-  width: 100%;
-  border-radius: 8px;
+  margin-top: 3%;
+  border: none; 
+  outline: none; 
+  font-size: 16px; 
+}
+
+.formrow2 div input:focus {
+  border: none; 
 }
 .formrow2 div{
     border: 1.5px solid teal;
@@ -625,27 +672,16 @@
   
 
 .formrow3 {
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-.formrow3 input {
-    width: 100%;
-    height: 20vh;
-    padding-left: 2%;
-    padding-right: 2%;
   display: flex;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-.formrow3 textarea {
+.formrow3 input {
   width: 100%;
-  height: 30vh;
-  padding-left: 3%;
-  padding-right: 2%;
-  padding-top: 3%;
+  height: 15vh;
+  padding: 2%;
+  box-sizing: border-box;
   border-radius: 8px;
 }
 
@@ -655,21 +691,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 7vh;
+  height: 5vh;
   border-radius: 8px;
   background-color: teal;
-  width: 40%;
+  width: 30%;
+  cursor: pointer;
+  margin: 2% ;
+}
+
+@media screen and (max-width: 1000px) {
+  .formbutton {
+    width: 50%;
+  }
+  
+  .formrow1 input, .formrow2 input, .formrow1 div, .formrow2 div {
+    width: 100%;
+    margin-bottom: 2%;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .formrow3 textarea {
     height: 17vh;
   }
-}
-
-@media screen and (max-width: 1000px) {
+  
   .formbutton {
-    width: 50%;
+    width: 80%;
   }
 }
 
@@ -696,7 +743,6 @@
   height: 50vh;
   padding-left: 5%;
   padding-right: 5%;
-  /* justify-content: space-between; */
 }
 
 .footercontb {
@@ -1092,4 +1138,5 @@
     font-family: "Poppins";
     box-shadow: 5px 5px 5px 5px grey;
   }
+}
 }
