@@ -719,6 +719,7 @@
     width: 80%;
   }
 }
+}
 
 .footer {
   height: 52vh;
@@ -743,6 +744,7 @@
   height: 50vh;
   padding-left: 5%;
   padding-right: 5%;
+  /* justify-content: space-between; */
 }
 
 .footercontb {
@@ -1138,5 +1140,4 @@
     font-family: "Poppins";
     box-shadow: 5px 5px 5px 5px grey;
   }
-}
 }
